@@ -2,7 +2,7 @@
 
 ## Wprowadzenie
 
-Witaj w repozetorium z materiałami do szkolenia **Tworzenie usług sieciowych w ASP.NET Core 8**.
+Witaj w repozytorium z materiałami do szkolenia **Tworzenie usług sieciowych w ASP.NET Core 8**.
 
 Do rozpoczęcia tego kursu potrzebujesz następujących rzeczy:
 
