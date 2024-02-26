@@ -1,4 +1,4 @@
-# Przykłady ze szkolenia Tworzenie usług sieciowych w ASP.NET Core 8
+# Tworzenie usług sieciowych w ASP.NET Core 8
 
 ## Wprowadzenie
 
