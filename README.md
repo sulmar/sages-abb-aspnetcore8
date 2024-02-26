@@ -12,5 +12,5 @@ Do rozpoczęcia tego kursu potrzebujesz następujących rzeczy:
 ## Sklonuj repozytorium Git
 
 ```
-git clone https://github.com/sulmar/sages-abb-netcore8
+git clone https://github.com/sulmar/sages-abb-aspnetcore8
 ```
