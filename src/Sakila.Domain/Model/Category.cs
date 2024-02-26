@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Sakila.Domain.Model;
 
-public partial class Category
+public partial class Category : BaseEntity
 {
     public byte CategoryId { get; set; }
 

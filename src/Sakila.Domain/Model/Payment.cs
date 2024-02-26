@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Sakila.Domain.Model;
 
-public partial class Payment : BaseEntity
+public partial class Payment : BaseEntity 
 {
     public int PaymentId { get; set; }
 
