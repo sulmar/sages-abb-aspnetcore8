@@ -13,10 +13,9 @@ git clone https://github.com/sulmar/sages-abb-aspnetcore8
 ```
 3. Utwórz bazę danych
 ```
-cd sql
-sqlcmd -S (localdb)\MSSQLLocalDB -d master -E -i sql-server-sakila-schema.sql
+sqlcmd -S (localdb)\MSSQLLocalDB -d master -E -i sql/sql-server-sakila-schema.sql
 ```
 4. Załadowuj przykładowane dane
 ```
-sqlcmd -S (localdb)\MSSQLLocalDB -d sakila -E -i sql-server-sakila-insert-data.sql
+sqlcmd -S (localdb)\MSSQLLocalDB -d sakila -E -i sql/sql-server-sakila-insert-data.sql
 ```
