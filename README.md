@@ -1,8 +1,8 @@
-# Przykłady ze szkolenia Entity Framework Core 8
+# Przykłady ze szkolenia Tworzenie usług sieciowych w ASP.NET Core 8
 
 ## Wprowadzenie
 
-Witaj w repozetorium z materiałami do szkolenia ** Tworzenie usług sieciowych w ASP.NET Core 8**.
+Witaj w repozetorium z materiałami do szkolenia **Tworzenie usług sieciowych w ASP.NET Core 8**.
 
 Do rozpoczęcia tego kursu potrzebujesz następujących rzeczy:
 
