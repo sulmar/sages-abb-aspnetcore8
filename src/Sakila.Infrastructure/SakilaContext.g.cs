@@ -56,9 +56,6 @@ public partial class SakilaContext : DbContext
 
     public virtual DbSet<Store> Stores { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("Name=ConnectionStrings:Sakila");
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Actor>(entity =>

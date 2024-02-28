@@ -1,4 +1,5 @@
 ﻿using Sakila.Domain.Abstractions;
+using Sakila.Domain.Model;
 
 namespace Sakila.Api.Endpoints;
 public static class CustomersEndpoints
@@ -9,16 +10,18 @@ public static class CustomersEndpoints
         group.MapGet("/", async (ICustomerRepository repository) => await repository.GetAllAsync());
 
         // GET api/customers/{id}
-        group.MapGet("/{id}", async (int id, ICustomerRepository repository) =>
+        group.MapGet("/{id}", async (int id, ICustomerRepository repository) => await repository.GetAsync(id) switch 
         {
-            var customer = await repository.GetAsync(id);
+            Customer customer => Results.Ok(customer),
+            _ => Results.NotFound()
+        }).WithName("GetCustomerById");
 
-            if (customer is null)
-            {
-                return Results.NotFound();
-            }
+        // POST api/customers
+        group.MapPost("/", async (Customer customer, ICustomerRepository repository) =>
+        {
+            await repository.AddAsync(customer);
 
-            return Results.Ok(customer);
+            return Results.CreatedAtRoute("GetCustomerById", new { Id = customer.CustomerId, customer });
         });
 
         return group;

@@ -10,5 +10,9 @@ public partial class SakilaContext
         modelBuilder.Entity<Rental>()
             .Navigation(p => p.Customer)
             .AutoInclude();
+
+        modelBuilder.Entity<Customer>()
+            .Navigation(c => c.Address)
+            .AutoInclude();
     }
 }

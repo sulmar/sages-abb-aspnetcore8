@@ -17,7 +17,7 @@ public class DbEntityRepository<T>(SakilaContext context) : IEntityRepository<T>
         await context.SaveChangesAsync();
     }
 
-    public async Task<IEnumerable<T>> GetAllAsync() => await entities.AsNoTracking().ToListAsync();
+    public virtual async Task<IEnumerable<T>> GetAllAsync() => await entities.AsNoTracking().ToListAsync();
 
     public async ValueTask<T?> GetAsync(int id) => await entities.FindAsync(id);
 

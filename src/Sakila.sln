@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sakila.Domain", "Sakila.Dom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sakila.Infrastructure", "Sakila.Infrastructure\Sakila.Infrastructure.csproj", "{9401BC59-2015-4894-A04B-B3B52512D03D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sakila.Api", "Sakila.Api\Sakila.Api.csproj", "{1C69E034-5A55-44F1-864F-E57DD52CD1C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{9401BC59-2015-4894-A04B-B3B52512D03D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9401BC59-2015-4894-A04B-B3B52512D03D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9401BC59-2015-4894-A04B-B3B52512D03D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C69E034-5A55-44F1-864F-E57DD52CD1C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C69E034-5A55-44F1-864F-E57DD52CD1C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C69E034-5A55-44F1-864F-E57DD52CD1C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C69E034-5A55-44F1-864F-E57DD52CD1C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,21 +1,22 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Sakila.Domain.Abstractions;
 using Sakila.Domain.Model;
+using Sakila.Domain.SearchCritierias;
 using Sakila.Intrastructure;
 
 namespace Sakila.Infrastructure;
 
 public class DbFilmRepository(SakilaContext context) : DbEntityRepository<Film>(context), IFilmRepository
 {
-    public async Task<IEnumerable<Film>> GetByAsync(string? title, string? rating)
+    public async Task<IEnumerable<Film>> GetByAsync(FilmSearchCritieria critieria)
     {
         var query = entities.AsQueryable();
 
-        if (!string.IsNullOrEmpty(title))
-            query = query.Where(f => f.Title.Contains(title));
+        if (!string.IsNullOrEmpty(critieria.Title))
+            query = query.Where(f => f.Title.Contains(critieria.Title));
 
-        if (!string.IsNullOrEmpty(rating))
-            query = query.Where(f => f.Rating.Equals(rating));
+        if (!string.IsNullOrEmpty(critieria.Rating))
+            query = query.Where(f => f.Rating.Equals(critieria.Rating));
 
 
         var films = await query.AsNoTracking().ToListAsync();
