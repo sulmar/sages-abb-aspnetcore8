@@ -14,18 +14,20 @@ public static class LoggerMiddlewareExtensions
 public class LoggerMiddleware
 {
     private readonly RequestDelegate next;
+    private readonly ILogger<LoggerMiddleware> logger;
 
-    public LoggerMiddleware(RequestDelegate next)
+    public LoggerMiddleware(RequestDelegate next, ILogger<LoggerMiddleware> logger)
     {
         this.next = next;
+        this.logger = logger;
     }
 
     public async Task InvokeAsync(HttpContext context)
     {
-        Console.WriteLine($"{context.Request.Method} {context.Request.Path}");
+        logger.LogInformation("{Method} {Path}", context.Request.Method, context.Request.Path);
 
         await next(context);
 
-        Console.WriteLine($"{context.Response.StatusCode}");
+        logger.LogInformation($"{context.Response.StatusCode}");
     }
 }
