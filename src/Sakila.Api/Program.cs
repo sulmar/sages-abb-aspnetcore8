@@ -7,6 +7,12 @@ using Sakila.Domain.SearchCritierias;
 using Microsoft.AspNetCore.Mvc;
 using Sakila.Domain.Model;
 using Sakila.Api.Middlewares;
+using Serilog;
+using Serilog.Formatting.Compact;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using HealthChecks.UI.Client;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,10 +29,49 @@ builder.Services.Configure<Json.JsonOptions>(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+builder.Logging.ClearProviders();
+
+var logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File("log.txt")
+    .WriteTo.File(new CompactJsonFormatter(), "log.json")
+    .CreateLogger();
+
+builder.Logging.AddSerilog(logger);
+
+builder.Services.AddHealthChecks().AddSqlServer(builder.Configuration.GetConnectionString("SakilaConnection") , name: "SakilaDb-check")
+    .AddCheck("Ping", () => HealthCheckResult.Healthy())
+    .AddCheck("Random", () =>
+    {
+        if (DateTime.Now.Minute % 2 == 0)
+        {
+            return HealthCheckResult.Healthy();
+        }
+        else
+        {
+            return HealthCheckResult.Unhealthy();
+        }
+    })
+    ;
+
+builder.Services
+    .AddHealthChecksUI(options =>
+    {
+        options.AddHealthCheckEndpoint("Healthcheck API", "/hc");
+    })
+    .AddInMemoryStorage();
+
 var app = builder.Build();
 
+app.MapHealthChecks("/hc", new  HealthCheckOptions
+{
+    Predicate = _ => true,
+    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+   });
+
 app.UseLogger();
-app.UseMiddleware<AuthorizeMiddleware>();
+// app.UseMiddleware<AuthorizeMiddleware>();
 
 app.UseSwagger();
 app.UseSwaggerUI();
@@ -35,6 +80,7 @@ app.UseSwaggerUI();
 app.UseRouting();
 
 //app.MapGet("/", ([FromHeader(Name = "x-code")] string? code) => $"Hello {code}!!!");
+app.MapHealthChecksUI(options => options.UIPath = "/dashboard");
 
 app.MapGet("/", () =>   Results.Redirect("/swagger"));
 
