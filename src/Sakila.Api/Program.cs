@@ -24,11 +24,40 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+app.Use(async (context, next) =>
+{
+    Console.WriteLine($"{context.Request.Method} {context.Request.Path}");
+
+    await next(context);
+
+    Console.WriteLine($"{context.Response.StatusCode}");
+
+});
+
+app.Use(async (context, next) =>
+{
+    var authorizeSecretKey = context.Request.Headers["x-secret-key"];
+
+    if (authorizeSecretKey.ToString() != "abb")
+    {
+        context.Response.StatusCode = StatusCodes.Status401Unauthorized;
+        return;
+    }
+
+    await next(context);
+
+});
+
 app.UseSwagger();
 app.UseSwaggerUI();
 
-app.MapGet("/", ([FromHeader(Name = "x-code")] string? code) => $"Hello {code}!!!");
- 
+
+app.UseRouting();
+
+//app.MapGet("/", ([FromHeader(Name = "x-code")] string? code) => $"Hello {code}!!!");
+
+app.MapGet("/", () =>   Results.Redirect("/swagger"));
+
 app.MapGet("/ping", () => "pong");
 
 app.MapGroup("api/customers")
