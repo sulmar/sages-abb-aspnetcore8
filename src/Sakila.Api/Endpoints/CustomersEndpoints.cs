@@ -15,7 +15,9 @@ public static class CustomersEndpoints
         {
             Customer customer => Results.Ok(customer),
             _ => Results.NotFound()
-        }).WithName("GetCustomerById");
+        }).WithName("GetCustomerById")
+        .Produces<Customer>(StatusCodes.Status200OK)
+        .Produces(StatusCodes.Status404NotFound);
 
         // POST api/customers
         group.MapPost("/", async (Customer customer, ICustomerRepository repository) =>
@@ -35,6 +37,29 @@ public static class CustomersEndpoints
             await repository.UpdateAsync(customer);
 
             return Results.NoContent();
+        });
+
+        group.MapDelete("/{id}", async (int id, ICustomerRepository repository) =>
+        {
+            var customer = await repository.GetAsync(id);
+
+            if (customer is null)
+                return Results.NotFound();
+
+            await repository.RemoveAsync(id);
+
+            return Results.Ok();
+        });
+
+        // HEAD api/customers/{id}
+        group.MapMethods("/{id}", ["HEAD"], async (int id, ICustomerRepository repository) =>
+        {
+            var customer = await repository.GetAsync(id);
+
+            if (customer is null)
+                return Results.NotFound();
+
+            return Results.Ok();
         });
 
         return group;
