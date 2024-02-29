@@ -13,7 +13,8 @@ public static class WebApplicationBuilderExtensions
 
         builder.Services.AddScoped<ICustomerRepository, DbCustomerRepository>();
         builder.Services.AddScoped<IPaymentRepository, DbPaymentRepository>();
-        builder.Services.AddScoped<IFilmRepository, DbFilmRepository>();    
+        builder.Services.AddScoped<IFilmRepository, DbFilmRepository>();
+        builder.Services.AddScoped<IActorRepository, DbActorRepository>();
 
         builder.Services.AddDbContextPool<SakilaContext>(options =>
         {
