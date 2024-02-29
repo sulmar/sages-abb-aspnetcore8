@@ -1,0 +1,14 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@hostname = localhost
+@port=5220
+@baseUri = http://{{hostname}}:{{port}}
+
+GET {{baseUri}}/api/customers
+Accept: application/json
+
+###
+GET {{baseUri}}/api/customers/1
+
+
+
