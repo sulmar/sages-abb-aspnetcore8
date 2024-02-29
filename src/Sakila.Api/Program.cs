@@ -6,6 +6,7 @@ using Sakila.Api.Extensions;
 using Sakila.Domain.SearchCritierias;
 using Microsoft.AspNetCore.Mvc;
 using Sakila.Domain.Model;
+using Sakila.Api.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,29 +25,8 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-app.Use(async (context, next) =>
-{
-    Console.WriteLine($"{context.Request.Method} {context.Request.Path}");
-
-    await next(context);
-
-    Console.WriteLine($"{context.Response.StatusCode}");
-
-});
-
-app.Use(async (context, next) =>
-{
-    var authorizeSecretKey = context.Request.Headers["x-secret-key"];
-
-    if (authorizeSecretKey.ToString() != "abb")
-    {
-        context.Response.StatusCode = StatusCodes.Status401Unauthorized;
-        return;
-    }
-
-    await next(context);
-
-});
+app.UseMiddleware<LoggerMiddleware>();
+app.UseMiddleware<AuthorizeMiddleware>();
 
 app.UseSwagger();
 app.UseSwaggerUI();
