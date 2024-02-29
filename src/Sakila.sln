@@ -3,19 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sakila.Domain", "Sakila.Domain\Sakila.Domain.csproj", "{E5B55A4E-ADF6-4388-BEEC-9F703E049949}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sakila.Domain", "Sakila.Domain\Sakila.Domain.csproj", "{E5B55A4E-ADF6-4388-BEEC-9F703E049949}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sakila.Infrastructure", "Sakila.Infrastructure\Sakila.Infrastructure.csproj", "{9401BC59-2015-4894-A04B-B3B52512D03D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sakila.Infrastructure", "Sakila.Infrastructure\Sakila.Infrastructure.csproj", "{9401BC59-2015-4894-A04B-B3B52512D03D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sakila.Api", "Sakila.Api\Sakila.Api.csproj", "{1C69E034-5A55-44F1-864F-E57DD52CD1C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sakila.Api", "Sakila.Api\Sakila.Api.csproj", "{1C69E034-5A55-44F1-864F-E57DD52CD1C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sakila.ConsoleApp", "Sakila.ConsoleApp\Sakila.ConsoleApp.csproj", "{52A3BEA1-C5B2-4FC2-ACD1-292051ECB070}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E5B55A4E-ADF6-4388-BEEC-9F703E049949}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -30,5 +29,12 @@ Global
 		{1C69E034-5A55-44F1-864F-E57DD52CD1C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C69E034-5A55-44F1-864F-E57DD52CD1C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C69E034-5A55-44F1-864F-E57DD52CD1C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52A3BEA1-C5B2-4FC2-ACD1-292051ECB070}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52A3BEA1-C5B2-4FC2-ACD1-292051ECB070}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52A3BEA1-C5B2-4FC2-ACD1-292051ECB070}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52A3BEA1-C5B2-4FC2-ACD1-292051ECB070}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
