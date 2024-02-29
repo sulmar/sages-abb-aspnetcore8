@@ -25,7 +25,7 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-app.UseMiddleware<LoggerMiddleware>();
+app.UseLogger();
 app.UseMiddleware<AuthorizeMiddleware>();
 
 app.UseSwagger();

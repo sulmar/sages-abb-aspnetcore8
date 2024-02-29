@@ -1,5 +1,16 @@
 ﻿namespace Sakila.Api.Middlewares;
 
+
+public static class LoggerMiddlewareExtensions
+{
+    public static IApplicationBuilder UseLogger(this IApplicationBuilder app)
+    {
+        app.UseMiddleware<LoggerMiddleware>();
+
+        return app;
+    }
+}
+
 public class LoggerMiddleware
 {
     private readonly RequestDelegate next;
