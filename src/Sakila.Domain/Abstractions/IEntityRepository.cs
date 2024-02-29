@@ -8,6 +8,7 @@ public interface IEntityRepository<T>
     Task<IEnumerable<T>> GetAllAsync(); 
     ValueTask<T?> GetAsync(int id);
     Task AddAsync(T item);
+    Task UpdateAsync(T item);
     Task RemoveAsync(int id);
 }
 

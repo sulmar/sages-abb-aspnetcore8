@@ -29,4 +29,11 @@ public class DbEntityRepository<T>(SakilaContext context) : IEntityRepository<T>
 
         await context.SaveChangesAsync();
     }
+
+    public async Task UpdateAsync(T item)
+    {
+        entities.Update(item);
+
+        await context.SaveChangesAsync();
+    }
 }
