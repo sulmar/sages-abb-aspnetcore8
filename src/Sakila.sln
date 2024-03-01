@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sakila.Infrastructure", "Sa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sakila.Api", "Sakila.Api\Sakila.Api.csproj", "{1C69E034-5A55-44F1-864F-E57DD52CD1C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sakila.ConsoleApp", "Sakila.ConsoleApp\Sakila.ConsoleApp.csproj", "{52A3BEA1-C5B2-4FC2-ACD1-292051ECB070}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sakila.ConsoleApp", "Sakila.ConsoleApp\Sakila.ConsoleApp.csproj", "{52A3BEA1-C5B2-4FC2-ACD1-292051ECB070}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth.Api", "Auth.Api\Auth.Api.csproj", "{E3E8CFBA-71B2-40D6-895B-E841B7B5D05F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,8 +35,15 @@ Global
 		{52A3BEA1-C5B2-4FC2-ACD1-292051ECB070}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52A3BEA1-C5B2-4FC2-ACD1-292051ECB070}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52A3BEA1-C5B2-4FC2-ACD1-292051ECB070}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3E8CFBA-71B2-40D6-895B-E841B7B5D05F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3E8CFBA-71B2-40D6-895B-E841B7B5D05F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3E8CFBA-71B2-40D6-895B-E841B7B5D05F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3E8CFBA-71B2-40D6-895B-E841B7B5D05F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80CAC234-096D-4FBA-850B-8324F78E9658}
 	EndGlobalSection
 EndGlobal

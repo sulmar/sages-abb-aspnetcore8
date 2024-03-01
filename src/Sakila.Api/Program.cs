@@ -14,7 +14,7 @@ using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using HealthChecks.UI.Client;
 using Microsoft.Extensions.DependencyInjection;
 using Sakila.Api.Services;
-
+   
 var builder = WebApplication.CreateBuilder(args);
 
 string env = builder.Environment.EnvironmentName;
