@@ -2043,3 +2043,1347 @@ Error Number:4060,State:1,Class:11
 2024-03-01 09:54:59.660 +01:00 [INF] End processing HTTP request after 22.5923ms - 200
 2024-03-01 09:54:59.661 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 200 null application/json 15.1237ms
 2024-03-01 09:54:59.664 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:32:55.015 +01:00 [INF] User profile is available. Using 'C:\Users\marci\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-01 15:32:55.064 +01:00 [INF] Initializing UI Database
+2024-03-01 15:33:23.868 +01:00 [INF] User profile is available. Using 'C:\Users\marci\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-01 15:33:23.924 +01:00 [INF] Initializing UI Database
+2024-03-01 15:33:24.897 +01:00 [INF] Saving healthchecks configuration to database
+2024-03-01 15:33:24.991 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 15:33:25.044 +01:00 [INF] Creating key {c4eece38-1dcc-4421-b71c-abbce9a3b1cd} with creation date 2024-03-01 14:33:25Z, activation date 2024-03-01 14:33:25Z, and expiration date 2024-05-30 14:33:25Z.
+2024-03-01 15:33:25.057 +01:00 [INF] Writing data to file 'C:\Users\marci\AppData\Local\ASP.NET\DataProtection-Keys\key-c4eece38-1dcc-4421-b71c-abbce9a3b1cd.xml'.
+2024-03-01 15:33:25.407 +01:00 [INF] Now listening on: http://localhost:5220
+2024-03-01 15:33:25.418 +01:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-03-01 15:33:26.108 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/ - null null
+2024-03-01 15:33:26.114 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:33:26.118 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:33:26.181 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-01 15:33:26.185 +01:00 [INF] Hosting environment: factory-lodz
+2024-03-01 15:33:26.200 +01:00 [INF] Content root path: C:\Users\marci\Projects\sages-abb-aspnetcore8\src\Sakila.Api
+2024-03-01 15:33:26.219 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:33:26.226 +01:00 [INF] GET /hc
+2024-03-01 15:33:26.229 +01:00 [INF] GET /
+2024-03-01 15:33:27.529 +01:00 [INF] Executing endpoint 'HTTP: GET /'
+2024-03-01 15:33:27.529 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:33:27.542 +01:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2024-03-01 15:33:27.544 +01:00 [INF] Executed endpoint 'HTTP: GET /'
+2024-03-01 15:33:27.548 +01:00 [INF] 302
+2024-03-01 15:33:27.554 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 1.594ms with message 'null'
+2024-03-01 15:33:27.557 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/ - 302 0 null 1452.7429ms
+2024-03-01 15:33:27.566 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/swagger - null null
+2024-03-01 15:33:27.577 +01:00 [INF] GET /swagger
+2024-03-01 15:33:27.588 +01:00 [INF] 301
+2024-03-01 15:33:27.592 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/swagger - 301 0 null 25.5197ms
+2024-03-01 15:33:27.604 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/swagger/index.html - null null
+2024-03-01 15:33:27.611 +01:00 [INF] GET /swagger/index.html
+2024-03-01 15:33:27.696 +01:00 [INF] 200
+2024-03-01 15:33:27.704 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/swagger/swagger-ui.css - null null
+2024-03-01 15:33:27.706 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/swagger/swagger-ui-standalone-preset.js - null null
+2024-03-01 15:33:27.705 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/swagger/index.html - 200 null text/html;charset=utf-8 100.3352ms
+2024-03-01 15:33:27.705 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/swagger/swagger-ui-bundle.js - null null
+2024-03-01 15:33:27.716 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/_vs/browserLink - null null
+2024-03-01 15:33:27.713 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-01 15:33:27.719 +01:00 [INF] GET /swagger/swagger-ui.css
+2024-03-01 15:33:27.722 +01:00 [INF] GET /swagger/swagger-ui-standalone-preset.js
+2024-03-01 15:33:27.730 +01:00 [INF] GET /swagger/swagger-ui-bundle.js
+2024-03-01 15:33:27.741 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 28.1261ms
+2024-03-01 15:33:27.805 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-03-01 15:33:27.805 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-03-01 15:33:27.809 +01:00 [INF] 200
+2024-03-01 15:33:27.813 +01:00 [INF] 200
+2024-03-01 15:33:27.816 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 110.1198ms
+2024-03-01 15:33:27.819 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/swagger/swagger-ui.css - 200 144929 text/css 115.0483ms
+2024-03-01 15:33:27.823 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-03-01 15:33:27.837 +01:00 [INF] 200
+2024-03-01 15:33:27.839 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/_vs/browserLink - 200 null text/javascript; charset=UTF-8 122.1089ms
+2024-03-01 15:33:27.839 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 134.7706ms
+2024-03-01 15:33:28.089 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/swagger/v1/swagger.json - null null
+2024-03-01 15:33:28.093 +01:00 [INF] GET /swagger/v1/swagger.json
+2024-03-01 15:33:28.144 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/swagger/favicon-32x32.png - null null
+2024-03-01 15:33:28.151 +01:00 [INF] GET /swagger/favicon-32x32.png
+2024-03-01 15:33:28.154 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-03-01 15:33:28.157 +01:00 [INF] 200
+2024-03-01 15:33:28.160 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/swagger/favicon-32x32.png - 200 628 image/png 15.6226ms
+2024-03-01 15:33:28.229 +01:00 [INF] 200
+2024-03-01 15:33:28.231 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 142.1838ms
+2024-03-01 15:33:28.285 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:33:28.288 +01:00 [INF] 503
+2024-03-01 15:33:28.289 +01:00 [INF] Received HTTP response headers after 2159.9469ms - 503
+2024-03-01 15:33:28.289 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 2069.9039ms
+2024-03-01 15:33:28.291 +01:00 [INF] End processing HTTP request after 2182.4678ms - 503
+2024-03-01 15:33:28.436 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 15:33:28.540 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:33:38.600 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:33:38.606 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:33:38.609 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:33:38.614 +01:00 [INF] GET /hc
+2024-03-01 15:33:38.618 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:33:38.621 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.2078ms with message 'null'
+2024-03-01 15:33:38.633 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:33:38.633 +01:00 [INF] Received HTTP response headers after 25.5921ms - 503
+2024-03-01 15:33:38.634 +01:00 [INF] 503
+2024-03-01 15:33:38.636 +01:00 [INF] End processing HTTP request after 35.987ms - 503
+2024-03-01 15:33:38.638 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 28.4752ms
+2024-03-01 15:33:38.646 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:33:38.664 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:33:48.689 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:33:48.691 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:33:48.695 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:33:48.700 +01:00 [INF] GET /hc
+2024-03-01 15:33:48.703 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:33:48.706 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0085ms with message 'null'
+2024-03-01 15:33:48.711 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:33:48.711 +01:00 [INF] Received HTTP response headers after 18.1653ms - 503
+2024-03-01 15:33:48.712 +01:00 [INF] 503
+2024-03-01 15:33:48.714 +01:00 [INF] End processing HTTP request after 25.1193ms - 503
+2024-03-01 15:33:48.715 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 21.4493ms
+2024-03-01 15:33:48.718 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:33:48.724 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:33:58.733 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:33:58.739 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:33:58.743 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:33:58.747 +01:00 [INF] GET /hc
+2024-03-01 15:33:58.750 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:33:58.751 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0065ms with message 'null'
+2024-03-01 15:33:58.756 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:33:58.757 +01:00 [INF] Received HTTP response headers after 15.4524ms - 503
+2024-03-01 15:33:58.758 +01:00 [INF] 503
+2024-03-01 15:33:58.761 +01:00 [INF] End processing HTTP request after 28.1724ms - 503
+2024-03-01 15:33:58.762 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 19.826ms
+2024-03-01 15:33:58.765 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:33:58.774 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:34:08.763 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/api/customers/ - null null
+2024-03-01 15:34:08.769 +01:00 [INF] GET /api/customers/
+2024-03-01 15:34:08.777 +01:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (trainer)
+2024-03-01 15:34:08.785 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-03-01 15:34:08.790 +01:00 [INF] 401
+2024-03-01 15:34:08.791 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:34:08.792 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/api/customers/ - 401 0 null 29.2856ms
+2024-03-01 15:34:08.795 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:34:08.804 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:34:08.809 +01:00 [INF] GET /hc
+2024-03-01 15:34:08.811 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:34:08.816 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:34:08.816 +01:00 [INF] Received HTTP response headers after 13.1102ms - 200
+2024-03-01 15:34:08.818 +01:00 [INF] 200
+2024-03-01 15:34:08.820 +01:00 [INF] End processing HTTP request after 29.2065ms - 200
+2024-03-01 15:34:08.822 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 17.982ms
+2024-03-01 15:34:08.828 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 15:34:08.853 +01:00 [INF] Saved 5 entities to in-memory store.
+2024-03-01 15:34:18.864 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:34:18.868 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:34:18.872 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:34:18.876 +01:00 [INF] GET /hc
+2024-03-01 15:34:18.878 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:34:18.883 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:34:18.883 +01:00 [INF] Received HTTP response headers after 12.4504ms - 200
+2024-03-01 15:34:18.886 +01:00 [INF] 200
+2024-03-01 15:34:18.889 +01:00 [INF] End processing HTTP request after 25.2688ms - 200
+2024-03-01 15:34:18.891 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 19.3979ms
+2024-03-01 15:34:18.899 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:34:28.917 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:34:28.924 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:34:28.928 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:34:28.932 +01:00 [INF] GET /hc
+2024-03-01 15:34:28.934 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:34:28.940 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:34:28.940 +01:00 [INF] Received HTTP response headers after 13.951ms - 200
+2024-03-01 15:34:28.941 +01:00 [INF] 200
+2024-03-01 15:34:28.942 +01:00 [INF] End processing HTTP request after 25.0098ms - 200
+2024-03-01 15:34:28.944 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 15.8678ms
+2024-03-01 15:34:28.946 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:34:38.965 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:34:38.969 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:34:38.972 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:34:38.976 +01:00 [INF] GET /hc
+2024-03-01 15:34:38.978 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:34:38.983 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:34:38.983 +01:00 [INF] Received HTTP response headers after 12.513ms - 200
+2024-03-01 15:34:38.987 +01:00 [INF] 200
+2024-03-01 15:34:38.991 +01:00 [INF] End processing HTTP request after 25.9838ms - 200
+2024-03-01 15:34:38.993 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 21.1911ms
+2024-03-01 15:34:38.996 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:34:49.010 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:34:49.014 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:34:49.017 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:34:49.023 +01:00 [INF] GET /hc
+2024-03-01 15:34:49.027 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:34:49.030 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:34:49.031 +01:00 [INF] Received HTTP response headers after 14.5531ms - 200
+2024-03-01 15:34:49.032 +01:00 [INF] 200
+2024-03-01 15:34:49.035 +01:00 [INF] End processing HTTP request after 24.52ms - 200
+2024-03-01 15:34:49.036 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 19.4688ms
+2024-03-01 15:34:49.039 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:34:59.051 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:34:59.055 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:34:59.059 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:34:59.065 +01:00 [INF] GET /hc
+2024-03-01 15:34:59.068 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:34:59.074 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:34:59.075 +01:00 [INF] Received HTTP response headers after 16.8339ms - 200
+2024-03-01 15:34:59.076 +01:00 [INF] 200
+2024-03-01 15:34:59.078 +01:00 [INF] End processing HTTP request after 27.2077ms - 200
+2024-03-01 15:34:59.080 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 21.1642ms
+2024-03-01 15:34:59.086 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:35:09.111 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:35:09.115 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:35:09.119 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:35:09.124 +01:00 [INF] GET /hc
+2024-03-01 15:35:09.125 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:35:09.127 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.007ms with message 'null'
+2024-03-01 15:35:09.132 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:35:09.132 +01:00 [INF] Received HTTP response headers after 13.8445ms - 503
+2024-03-01 15:35:09.133 +01:00 [INF] 503
+2024-03-01 15:35:09.135 +01:00 [INF] End processing HTTP request after 23.9549ms - 503
+2024-03-01 15:35:09.137 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 17.8697ms
+2024-03-01 15:35:09.142 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 15:35:09.153 +01:00 [INF] Saved 5 entities to in-memory store.
+2024-03-01 15:35:19.169 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:35:19.173 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:35:19.177 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:35:19.181 +01:00 [INF] GET /hc
+2024-03-01 15:35:19.184 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:35:19.187 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0068ms with message 'null'
+2024-03-01 15:35:19.191 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:35:19.191 +01:00 [INF] Received HTTP response headers after 15.5329ms - 503
+2024-03-01 15:35:19.193 +01:00 [INF] 503
+2024-03-01 15:35:19.195 +01:00 [INF] End processing HTTP request after 25.6126ms - 503
+2024-03-01 15:35:19.196 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 20.0994ms
+2024-03-01 15:35:19.198 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:35:19.205 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:35:24.813 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/api/customers/ - null null
+2024-03-01 15:35:24.818 +01:00 [INF] GET /api/customers/
+2024-03-01 15:35:24.905 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10206: Unable to validate audience. The 'audiences' parameter is empty.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-03-01 15:35:24.936 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10206: Unable to validate audience. The 'audiences' parameter is empty.
+2024-03-01 15:35:24.942 +01:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (trainer)
+2024-03-01 15:35:24.946 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-03-01 15:35:24.947 +01:00 [INF] 401
+2024-03-01 15:35:24.949 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/api/customers/ - 401 0 null 136.5425ms
+2024-03-01 15:35:29.211 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:35:29.215 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:35:29.229 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:35:29.232 +01:00 [INF] GET /hc
+2024-03-01 15:35:29.234 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:35:29.235 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0794ms with message 'null'
+2024-03-01 15:35:29.240 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:35:29.240 +01:00 [INF] Received HTTP response headers after 22.573ms - 503
+2024-03-01 15:35:29.241 +01:00 [INF] 503
+2024-03-01 15:35:29.244 +01:00 [INF] End processing HTTP request after 32.3916ms - 503
+2024-03-01 15:35:29.245 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 15.3118ms
+2024-03-01 15:35:29.247 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:35:29.252 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:35:39.256 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:35:39.259 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:35:39.263 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:35:39.267 +01:00 [INF] GET /hc
+2024-03-01 15:35:39.269 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:35:39.271 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0067ms with message 'null'
+2024-03-01 15:35:39.275 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:35:39.275 +01:00 [INF] Received HTTP response headers after 13.8045ms - 503
+2024-03-01 15:35:39.277 +01:00 [INF] 503
+2024-03-01 15:35:39.279 +01:00 [INF] End processing HTTP request after 23.2976ms - 503
+2024-03-01 15:35:39.281 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 18.5006ms
+2024-03-01 15:35:39.283 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:35:39.290 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:35:49.304 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:35:49.307 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:35:49.311 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:35:49.316 +01:00 [INF] GET /hc
+2024-03-01 15:35:49.319 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:35:49.321 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0072ms with message 'null'
+2024-03-01 15:35:49.326 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:35:49.326 +01:00 [INF] Received HTTP response headers after 15.5866ms - 503
+2024-03-01 15:35:49.328 +01:00 [INF] 503
+2024-03-01 15:35:49.329 +01:00 [INF] End processing HTTP request after 25.6598ms - 503
+2024-03-01 15:35:49.332 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 20.6173ms
+2024-03-01 15:35:49.333 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:35:49.341 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:36:45.564 +01:00 [INF] User profile is available. Using 'C:\Users\marci\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-01 15:36:45.634 +01:00 [INF] Initializing UI Database
+2024-03-01 15:36:46.431 +01:00 [INF] Saving healthchecks configuration to database
+2024-03-01 15:36:46.523 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 15:36:46.850 +01:00 [INF] Now listening on: http://localhost:5220
+2024-03-01 15:36:46.861 +01:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-03-01 15:36:46.981 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:36:46.986 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:36:47.053 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-01 15:36:47.055 +01:00 [INF] Hosting environment: factory-lodz
+2024-03-01 15:36:47.061 +01:00 [INF] Content root path: C:\Users\marci\Projects\sages-abb-aspnetcore8\src\Sakila.Api
+2024-03-01 15:36:47.115 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:36:47.133 +01:00 [INF] GET /hc
+2024-03-01 15:36:47.272 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:36:47.568 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/ - null null
+2024-03-01 15:36:47.608 +01:00 [INF] GET /
+2024-03-01 15:36:47.615 +01:00 [INF] Executing endpoint 'HTTP: GET /'
+2024-03-01 15:36:47.635 +01:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2024-03-01 15:36:47.638 +01:00 [INF] Executed endpoint 'HTTP: GET /'
+2024-03-01 15:36:47.641 +01:00 [INF] 302
+2024-03-01 15:36:47.650 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/ - 302 0 null 79.5331ms
+2024-03-01 15:36:47.720 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/swagger/index.html - null null
+2024-03-01 15:36:47.732 +01:00 [INF] GET /swagger/index.html
+2024-03-01 15:36:47.855 +01:00 [INF] 200
+2024-03-01 15:36:47.907 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/_vs/browserLink - null null
+2024-03-01 15:36:47.909 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-01 15:36:47.911 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:36:47.920 +01:00 [INF] Received HTTP response headers after 924.9297ms - 200
+2024-03-01 15:36:47.940 +01:00 [INF] 200
+2024-03-01 15:36:47.921 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/swagger/index.html - 200 null text/html;charset=utf-8 200.353ms
+2024-03-01 15:36:47.945 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 836.1213ms
+2024-03-01 15:36:47.935 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 27.153ms
+2024-03-01 15:36:47.944 +01:00 [INF] End processing HTTP request after 966.7176ms - 200
+2024-03-01 15:36:48.003 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/_vs/browserLink - 200 null text/javascript; charset=UTF-8 95.6177ms
+2024-03-01 15:36:48.473 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/swagger/v1/swagger.json - null null
+2024-03-01 15:36:48.506 +01:00 [INF] GET /swagger/v1/swagger.json
+2024-03-01 15:36:48.535 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:36:48.744 +01:00 [INF] 200
+2024-03-01 15:36:48.745 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 272.5323ms
+2024-03-01 15:36:53.058 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/api/customers/ - null null
+2024-03-01 15:36:53.062 +01:00 [INF] GET /api/customers/
+2024-03-01 15:36:53.120 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10206: Unable to validate audience. The 'audiences' parameter is empty.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-03-01 15:36:53.151 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10206: Unable to validate audience. The 'audiences' parameter is empty.
+2024-03-01 15:36:53.159 +01:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (trainer)
+2024-03-01 15:36:53.167 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-03-01 15:36:53.171 +01:00 [INF] 401
+2024-03-01 15:36:53.174 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/api/customers/ - 401 0 null 116.1551ms
+2024-03-01 15:36:58.638 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:36:58.643 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:36:58.646 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:36:58.650 +01:00 [INF] GET /hc
+2024-03-01 15:36:58.651 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:36:58.662 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:36:58.663 +01:00 [INF] Received HTTP response headers after 17.9907ms - 200
+2024-03-01 15:36:58.664 +01:00 [INF] 200
+2024-03-01 15:36:58.666 +01:00 [INF] End processing HTTP request after 28.7556ms - 200
+2024-03-01 15:36:58.667 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 21.4917ms
+2024-03-01 15:36:58.690 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:37:08.711 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:37:08.717 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:37:08.720 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:37:08.725 +01:00 [INF] GET /hc
+2024-03-01 15:37:08.727 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:37:08.735 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.1122ms with message 'null'
+2024-03-01 15:37:08.741 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:37:08.742 +01:00 [INF] Received HTTP response headers after 23.2768ms - 503
+2024-03-01 15:37:08.743 +01:00 [INF] 503
+2024-03-01 15:37:08.745 +01:00 [INF] End processing HTTP request after 34.8612ms - 503
+2024-03-01 15:37:08.747 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 27.7743ms
+2024-03-01 15:37:08.790 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 15:37:08.816 +01:00 [INF] Saved 5 entities to in-memory store.
+2024-03-01 15:37:18.827 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:37:18.830 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:37:18.834 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:37:18.840 +01:00 [INF] GET /hc
+2024-03-01 15:37:18.842 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:37:18.845 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0137ms with message 'null'
+2024-03-01 15:37:18.849 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:37:18.849 +01:00 [INF] Received HTTP response headers after 16.5525ms - 503
+2024-03-01 15:37:18.851 +01:00 [INF] 503
+2024-03-01 15:37:18.853 +01:00 [INF] End processing HTTP request after 25.674ms - 503
+2024-03-01 15:37:18.855 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 21.3084ms
+2024-03-01 15:37:18.861 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:37:18.868 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:37:28.883 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:37:28.886 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:37:28.890 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:37:28.894 +01:00 [INF] GET /hc
+2024-03-01 15:37:28.896 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:37:28.900 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0282ms with message 'null'
+2024-03-01 15:37:28.906 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:37:28.907 +01:00 [INF] Received HTTP response headers after 18.1771ms - 503
+2024-03-01 15:37:28.909 +01:00 [INF] 503
+2024-03-01 15:37:28.911 +01:00 [INF] End processing HTTP request after 28.4411ms - 503
+2024-03-01 15:37:28.913 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 23.9276ms
+2024-03-01 15:37:28.916 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:37:28.924 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:37:38.931 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:37:38.935 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:37:38.940 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:37:38.943 +01:00 [INF] GET /hc
+2024-03-01 15:37:38.945 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:37:38.949 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0281ms with message 'null'
+2024-03-01 15:37:38.952 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:37:38.952 +01:00 [INF] Received HTTP response headers after 14.0084ms - 503
+2024-03-01 15:37:38.953 +01:00 [INF] 503
+2024-03-01 15:37:38.955 +01:00 [INF] End processing HTTP request after 24.0263ms - 503
+2024-03-01 15:37:38.958 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 19.0194ms
+2024-03-01 15:37:38.960 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:37:38.964 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:37:48.976 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:37:48.981 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:37:48.984 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:37:48.987 +01:00 [INF] GET /hc
+2024-03-01 15:37:48.989 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:37:48.991 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.1673ms with message 'null'
+2024-03-01 15:37:48.994 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:37:48.995 +01:00 [INF] Received HTTP response headers after 12.3803ms - 503
+2024-03-01 15:37:48.996 +01:00 [INF] 503
+2024-03-01 15:37:48.998 +01:00 [INF] End processing HTTP request after 21.906ms - 503
+2024-03-01 15:37:48.999 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 15.8579ms
+2024-03-01 15:37:49.001 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:37:49.009 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:37:50.741 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/api/customers/ - null null
+2024-03-01 15:37:50.747 +01:00 [INF] GET /api/customers/
+2024-03-01 15:37:50.758 +01:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (trainer)
+2024-03-01 15:37:50.763 +01:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2024-03-01 15:37:50.764 +01:00 [INF] 403
+2024-03-01 15:37:50.766 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/api/customers/ - 403 0 null 24.1989ms
+2024-03-01 15:37:59.015 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:37:59.020 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:37:59.024 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:37:59.028 +01:00 [INF] GET /hc
+2024-03-01 15:37:59.029 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:37:59.032 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0273ms with message 'null'
+2024-03-01 15:37:59.036 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:37:59.037 +01:00 [INF] Received HTTP response headers after 14.3441ms - 503
+2024-03-01 15:37:59.038 +01:00 [INF] 503
+2024-03-01 15:37:59.039 +01:00 [INF] End processing HTTP request after 23.9818ms - 503
+2024-03-01 15:37:59.040 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 17.0541ms
+2024-03-01 15:37:59.042 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:37:59.049 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:38:09.057 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:38:09.061 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:38:09.065 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:38:09.070 +01:00 [INF] GET /hc
+2024-03-01 15:38:09.073 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:38:09.077 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:38:09.077 +01:00 [INF] Received HTTP response headers after 13.6942ms - 200
+2024-03-01 15:38:09.079 +01:00 [INF] 200
+2024-03-01 15:38:09.081 +01:00 [INF] End processing HTTP request after 24.1773ms - 200
+2024-03-01 15:38:09.082 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 18.2582ms
+2024-03-01 15:38:09.087 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 15:38:09.091 +01:00 [INF] Saved 5 entities to in-memory store.
+2024-03-01 15:38:19.096 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:38:19.099 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:38:19.102 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:38:19.105 +01:00 [INF] GET /hc
+2024-03-01 15:38:19.108 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:38:19.113 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:38:19.113 +01:00 [INF] Received HTTP response headers after 11.9892ms - 200
+2024-03-01 15:38:19.115 +01:00 [INF] 200
+2024-03-01 15:38:19.117 +01:00 [INF] End processing HTTP request after 20.6054ms - 200
+2024-03-01 15:38:19.118 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 15.5175ms
+2024-03-01 15:38:19.121 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:39:01.607 +01:00 [INF] User profile is available. Using 'C:\Users\marci\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-01 15:39:01.773 +01:00 [INF] Initializing UI Database
+2024-03-01 15:39:02.761 +01:00 [INF] Saving healthchecks configuration to database
+2024-03-01 15:39:02.911 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 15:39:03.235 +01:00 [INF] Now listening on: http://localhost:5220
+2024-03-01 15:39:03.248 +01:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-03-01 15:39:03.379 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:39:03.386 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:39:03.446 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-01 15:39:03.452 +01:00 [INF] Hosting environment: factory-lodz
+2024-03-01 15:39:03.453 +01:00 [INF] Content root path: C:\Users\marci\Projects\sages-abb-aspnetcore8\src\Sakila.Api
+2024-03-01 15:39:03.523 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:39:03.557 +01:00 [INF] GET /hc
+2024-03-01 15:39:03.742 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/ - null null
+2024-03-01 15:39:03.757 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:39:03.790 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 2.9559ms with message 'null'
+2024-03-01 15:39:03.791 +01:00 [INF] GET /
+2024-03-01 15:39:03.798 +01:00 [INF] Executing endpoint 'HTTP: GET /'
+2024-03-01 15:39:03.812 +01:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2024-03-01 15:39:03.814 +01:00 [INF] Executed endpoint 'HTTP: GET /'
+2024-03-01 15:39:03.817 +01:00 [INF] 302
+2024-03-01 15:39:03.841 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/ - 302 0 null 99.0637ms
+2024-03-01 15:39:03.849 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/swagger/index.html - null null
+2024-03-01 15:39:03.874 +01:00 [INF] GET /swagger/index.html
+2024-03-01 15:39:03.953 +01:00 [INF] 200
+2024-03-01 15:39:03.956 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/swagger/index.html - 200 null text/html;charset=utf-8 106.7627ms
+2024-03-01 15:39:03.964 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-01 15:39:03.964 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/_vs/browserLink - null null
+2024-03-01 15:39:03.975 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 12.3829ms
+2024-03-01 15:39:04.061 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/_vs/browserLink - 200 null text/javascript; charset=UTF-8 96.573ms
+2024-03-01 15:39:04.144 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/swagger/v1/swagger.json - null null
+2024-03-01 15:39:04.148 +01:00 [INF] GET /swagger/v1/swagger.json
+2024-03-01 15:39:04.289 +01:00 [INF] 200
+2024-03-01 15:39:04.291 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 146.1681ms
+2024-03-01 15:39:04.300 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:39:04.304 +01:00 [INF] 503
+2024-03-01 15:39:04.304 +01:00 [INF] Received HTTP response headers after 913.6079ms - 503
+2024-03-01 15:39:04.306 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 799.9059ms
+2024-03-01 15:39:04.309 +01:00 [INF] End processing HTTP request after 934.3974ms - 503
+2024-03-01 15:39:04.425 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 15:39:04.545 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:39:07.404 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/api/customers/ - null null
+2024-03-01 15:39:07.433 +01:00 [INF] GET /api/customers/
+2024-03-01 15:39:07.519 +01:00 [INF] Executing endpoint 'HTTP: GET api/customers/'
+2024-03-01 15:39:08.012 +01:00 [WRN] The property 'CategoryId' on entity type 'Category' is of type 'byte', but is set up to use a SQL Server identity column; this requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values.
+2024-03-01 15:39:08.020 +01:00 [WRN] The property 'LanguageId' on entity type 'Language' is of type 'byte', but is set up to use a SQL Server identity column; this requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values.
+2024-03-01 15:39:08.023 +01:00 [WRN] The property 'StaffId' on entity type 'Staff' is of type 'byte', but is set up to use a SQL Server identity column; this requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values.
+2024-03-01 15:39:08.334 +01:00 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[customer_id], [c].[active], [c].[address_id], [c].[create_date], [c].[email], [c].[first_name], [c].[last_name], [c].[last_update], [c].[store_id]
+FROM [customer] AS [c]
+2024-03-01 15:39:08.379 +01:00 [INF] Executed endpoint 'HTTP: GET api/customers/'
+2024-03-01 15:39:08.385 +01:00 [INF] 200
+2024-03-01 15:39:08.396 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/api/customers/ - 200 null application/json; charset=utf-8 991.5318ms
+2024-03-01 15:39:14.597 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:39:14.604 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:39:14.607 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:39:14.612 +01:00 [INF] GET /hc
+2024-03-01 15:39:14.614 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:39:14.617 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.3165ms with message 'null'
+2024-03-01 15:39:14.621 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:39:14.621 +01:00 [INF] Received HTTP response headers after 15.3701ms - 503
+2024-03-01 15:39:14.622 +01:00 [INF] 503
+2024-03-01 15:39:14.625 +01:00 [INF] End processing HTTP request after 27.6259ms - 503
+2024-03-01 15:39:14.626 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 19.3479ms
+2024-03-01 15:39:14.634 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:39:14.648 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:39:24.664 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:39:24.670 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:39:24.674 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:39:24.678 +01:00 [INF] GET /hc
+2024-03-01 15:39:24.680 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:39:24.682 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0109ms with message 'null'
+2024-03-01 15:39:24.687 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:39:24.688 +01:00 [INF] Received HTTP response headers after 15.9578ms - 503
+2024-03-01 15:39:24.690 +01:00 [INF] 503
+2024-03-01 15:39:24.693 +01:00 [INF] End processing HTTP request after 28.9315ms - 503
+2024-03-01 15:39:24.694 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 21.04ms
+2024-03-01 15:39:24.697 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:39:24.702 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:39:34.710 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:39:34.717 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:39:34.720 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:39:34.724 +01:00 [INF] GET /hc
+2024-03-01 15:39:34.727 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:39:34.729 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0074ms with message 'null'
+2024-03-01 15:39:34.734 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:39:34.735 +01:00 [INF] Received HTTP response headers after 15.7221ms - 503
+2024-03-01 15:39:34.736 +01:00 [INF] 503
+2024-03-01 15:39:34.738 +01:00 [INF] End processing HTTP request after 28.0225ms - 503
+2024-03-01 15:39:34.740 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 19.7384ms
+2024-03-01 15:39:34.742 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:39:34.747 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:39:44.757 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:39:44.761 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:39:44.765 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:39:44.769 +01:00 [INF] GET /hc
+2024-03-01 15:39:44.771 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:39:44.774 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0076ms with message 'null'
+2024-03-01 15:39:44.778 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:39:44.778 +01:00 [INF] Received HTTP response headers after 14.7476ms - 503
+2024-03-01 15:39:44.780 +01:00 [INF] 503
+2024-03-01 15:39:44.781 +01:00 [INF] End processing HTTP request after 24.7631ms - 503
+2024-03-01 15:39:44.782 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 18.0908ms
+2024-03-01 15:39:44.784 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:39:44.789 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:39:54.796 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:39:54.800 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:39:54.803 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:39:54.807 +01:00 [INF] GET /hc
+2024-03-01 15:39:54.810 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:39:54.813 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.009ms with message 'null'
+2024-03-01 15:39:54.818 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:39:54.818 +01:00 [INF] Received HTTP response headers after 16.4805ms - 503
+2024-03-01 15:39:54.820 +01:00 [INF] 503
+2024-03-01 15:39:54.822 +01:00 [INF] End processing HTTP request after 25.4147ms - 503
+2024-03-01 15:39:54.823 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 20.5823ms
+2024-03-01 15:39:54.825 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:39:54.832 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:40:04.846 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:40:04.851 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:40:04.854 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:40:04.857 +01:00 [INF] GET /hc
+2024-03-01 15:40:04.858 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:40:04.862 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:40:04.862 +01:00 [INF] Received HTTP response headers after 10.1103ms - 200
+2024-03-01 15:40:04.865 +01:00 [INF] 200
+2024-03-01 15:40:04.866 +01:00 [INF] End processing HTTP request after 20.7336ms - 200
+2024-03-01 15:40:04.868 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 15.1072ms
+2024-03-01 15:40:04.872 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 15:40:04.895 +01:00 [INF] Saved 5 entities to in-memory store.
+2024-03-01 15:40:14.905 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:40:14.911 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:40:14.915 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:40:14.919 +01:00 [INF] GET /hc
+2024-03-01 15:40:14.921 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:40:14.925 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:40:14.925 +01:00 [INF] Received HTTP response headers after 12.3413ms - 200
+2024-03-01 15:40:14.927 +01:00 [INF] 200
+2024-03-01 15:40:14.929 +01:00 [INF] End processing HTTP request after 24.1276ms - 200
+2024-03-01 15:40:14.930 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 15.5863ms
+2024-03-01 15:40:14.934 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:40:24.949 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:40:24.952 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:40:24.956 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:40:24.962 +01:00 [INF] GET /hc
+2024-03-01 15:40:24.965 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:40:24.970 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:40:24.970 +01:00 [INF] Received HTTP response headers after 16.0742ms - 200
+2024-03-01 15:40:24.972 +01:00 [INF] 200
+2024-03-01 15:40:24.975 +01:00 [INF] End processing HTTP request after 25.8487ms - 200
+2024-03-01 15:40:24.976 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 21.0981ms
+2024-03-01 15:40:24.980 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:40:34.994 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:40:34.996 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:40:35.000 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:40:35.004 +01:00 [INF] GET /hc
+2024-03-01 15:40:35.007 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:40:35.012 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:40:35.012 +01:00 [INF] Received HTTP response headers after 13.5389ms - 200
+2024-03-01 15:40:35.015 +01:00 [INF] 200
+2024-03-01 15:40:35.020 +01:00 [INF] End processing HTTP request after 26.6261ms - 200
+2024-03-01 15:40:35.022 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 23.2984ms
+2024-03-01 15:40:35.027 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:40:45.041 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:40:45.045 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:40:45.048 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:40:45.053 +01:00 [INF] GET /hc
+2024-03-01 15:40:57.584 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:40:57.592 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:40:57.592 +01:00 [INF] Received HTTP response headers after 12545.5552ms - 200
+2024-03-01 15:40:57.594 +01:00 [INF] 200
+2024-03-01 15:40:57.597 +01:00 [INF] End processing HTTP request after 12555.2767ms - 200
+2024-03-01 15:40:57.598 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 12551.0101ms
+2024-03-01 15:40:57.601 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:41:03.107 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/api/customers/ - null null
+2024-03-01 15:41:03.111 +01:00 [INF] GET /api/customers/
+2024-03-01 15:41:48.024 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:41:48.032 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:41:48.034 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '17.11.2023 11:15:42', Current time (UTC): '01.03.2024 14:41:48'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-03-01 15:41:48.047 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:41:48.073 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '17.11.2023 11:15:42', Current time (UTC): '01.03.2024 14:41:48'.
+2024-03-01 15:41:48.078 +01:00 [INF] GET /hc
+2024-03-01 15:41:50.607 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:41:50.607 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-03-01 15:41:50.613 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.1232ms with message 'null'
+2024-03-01 15:41:50.627 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:41:50.627 +01:00 [INF] Received HTTP response headers after 2592.656ms - 503
+2024-03-01 15:41:50.629 +01:00 [INF] 503
+2024-03-01 15:41:50.629 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-03-01 15:41:50.632 +01:00 [INF] End processing HTTP request after 2608.4418ms - 503
+2024-03-01 15:41:50.635 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 2588.1719ms
+2024-03-01 15:41:50.637 +01:00 [INF] 401
+2024-03-01 15:41:50.641 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 15:41:50.645 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/api/customers/ - 401 0 null 47537.3389ms
+2024-03-01 15:41:50.648 +01:00 [INF] Saved 5 entities to in-memory store.
+2024-03-01 15:42:00.660 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:42:00.664 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:42:00.667 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:42:00.671 +01:00 [INF] GET /hc
+2024-03-01 15:42:03.566 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:42:03.572 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:42:03.573 +01:00 [INF] Received HTTP response headers after 2907.0455ms - 200
+2024-03-01 15:42:03.574 +01:00 [INF] 200
+2024-03-01 15:42:03.576 +01:00 [INF] End processing HTTP request after 2916.1215ms - 200
+2024-03-01 15:42:03.578 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 2910.7482ms
+2024-03-01 15:42:03.580 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 15:42:03.585 +01:00 [INF] Saved 5 entities to in-memory store.
+2024-03-01 15:42:11.701 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/api/customers/ - null null
+2024-03-01 15:42:11.706 +01:00 [INF] GET /api/customers/
+2024-03-01 15:42:13.769 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:42:13.770 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-03-01 15:42:13.774 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:42:13.777 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-03-01 15:42:13.782 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:42:13.783 +01:00 [INF] 401
+2024-03-01 15:42:13.787 +01:00 [INF] GET /hc
+2024-03-01 15:42:13.789 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/api/customers/ - 401 0 null 2087.9959ms
+2024-03-01 15:42:15.644 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:42:15.658 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:42:15.658 +01:00 [INF] Received HTTP response headers after 1877.7124ms - 200
+2024-03-01 15:42:15.660 +01:00 [INF] 200
+2024-03-01 15:42:15.661 +01:00 [INF] End processing HTTP request after 1891.8459ms - 200
+2024-03-01 15:42:15.662 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 1881.2002ms
+2024-03-01 15:42:15.664 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:42:25.682 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:42:25.685 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:42:25.689 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:42:25.696 +01:00 [INF] GET /hc
+2024-03-01 15:42:30.506 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:42:30.514 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:42:30.514 +01:00 [INF] Received HTTP response headers after 4827.0507ms - 200
+2024-03-01 15:42:30.518 +01:00 [INF] 200
+2024-03-01 15:42:30.520 +01:00 [INF] End processing HTTP request after 4838.3575ms - 200
+2024-03-01 15:42:30.522 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 4833.3506ms
+2024-03-01 15:42:30.525 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:42:40.539 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:42:40.542 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:42:40.544 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:42:40.549 +01:00 [INF] GET /hc
+2024-03-01 15:42:40.550 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:42:40.554 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:42:40.554 +01:00 [INF] Received HTTP response headers after 11.2966ms - 200
+2024-03-01 15:42:40.557 +01:00 [INF] 200
+2024-03-01 15:42:40.560 +01:00 [INF] End processing HTTP request after 20.2847ms - 200
+2024-03-01 15:42:40.561 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 17.5349ms
+2024-03-01 15:42:40.564 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:42:50.579 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:42:50.583 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:42:50.585 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:42:50.588 +01:00 [INF] GET /hc
+2024-03-01 15:42:50.590 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:42:50.594 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:42:50.595 +01:00 [INF] Received HTTP response headers after 10.6069ms - 200
+2024-03-01 15:42:50.597 +01:00 [INF] 200
+2024-03-01 15:42:50.600 +01:00 [INF] End processing HTTP request after 21.3777ms - 200
+2024-03-01 15:42:50.602 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 16.4638ms
+2024-03-01 15:42:50.605 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:43:00.618 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:43:00.624 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:43:00.628 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:43:00.632 +01:00 [INF] GET /hc
+2024-03-01 15:43:00.634 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:43:00.636 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.1591ms with message 'null'
+2024-03-01 15:43:00.640 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:43:00.640 +01:00 [INF] Received HTTP response headers after 13.1388ms - 503
+2024-03-01 15:43:00.643 +01:00 [INF] 503
+2024-03-01 15:43:00.645 +01:00 [INF] End processing HTTP request after 27.2261ms - 503
+2024-03-01 15:43:00.647 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 19.7224ms
+2024-03-01 15:43:00.650 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 15:43:00.658 +01:00 [INF] Saved 5 entities to in-memory store.
+2024-03-01 15:43:10.662 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:43:10.666 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:43:10.673 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:43:10.679 +01:00 [INF] GET /hc
+2024-03-01 15:43:10.680 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:43:10.683 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0261ms with message 'null'
+2024-03-01 15:43:10.687 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:43:10.687 +01:00 [INF] Received HTTP response headers after 15.6735ms - 503
+2024-03-01 15:43:10.688 +01:00 [INF] 503
+2024-03-01 15:43:10.690 +01:00 [INF] End processing HTTP request after 27.4192ms - 503
+2024-03-01 15:43:10.691 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 18.6513ms
+2024-03-01 15:43:10.693 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:43:10.699 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:43:20.707 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:43:20.711 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:43:20.714 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:43:20.717 +01:00 [INF] GET /hc
+2024-03-01 15:43:20.718 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:43:20.720 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0252ms with message 'null'
+2024-03-01 15:43:20.725 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:43:20.725 +01:00 [INF] Received HTTP response headers after 12.2366ms - 503
+2024-03-01 15:43:20.726 +01:00 [INF] 503
+2024-03-01 15:43:20.728 +01:00 [INF] End processing HTTP request after 20.994ms - 503
+2024-03-01 15:43:20.729 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 15.9279ms
+2024-03-01 15:43:20.732 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:43:20.738 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:43:30.753 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:43:30.758 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:43:30.761 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:43:30.766 +01:00 [INF] GET /hc
+2024-03-01 15:43:30.768 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:43:30.770 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0058ms with message 'null'
+2024-03-01 15:43:30.774 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:43:30.774 +01:00 [INF] Received HTTP response headers after 14.0437ms - 503
+2024-03-01 15:43:30.776 +01:00 [INF] 503
+2024-03-01 15:43:30.778 +01:00 [INF] End processing HTTP request after 24.9463ms - 503
+2024-03-01 15:43:30.780 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 18.643ms
+2024-03-01 15:43:30.782 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:43:30.787 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:43:31.636 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/api/customers/ - null null
+2024-03-01 15:43:31.640 +01:00 [INF] GET /api/customers/
+2024-03-01 15:43:31.645 +01:00 [INF] Executing endpoint 'HTTP: GET api/customers/'
+2024-03-01 15:43:31.674 +01:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[customer_id], [c].[active], [c].[address_id], [c].[create_date], [c].[email], [c].[first_name], [c].[last_name], [c].[last_update], [c].[store_id]
+FROM [customer] AS [c]
+2024-03-01 15:43:31.687 +01:00 [INF] Executed endpoint 'HTTP: GET api/customers/'
+2024-03-01 15:43:31.690 +01:00 [INF] 200
+2024-03-01 15:43:31.692 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/api/customers/ - 200 null application/json; charset=utf-8 56.4215ms
+2024-03-01 15:43:40.791 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:43:40.796 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:43:40.799 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:43:40.803 +01:00 [INF] GET /hc
+2024-03-01 15:43:50.185 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:43:50.185 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/api/customers/ - null null
+2024-03-01 15:43:50.189 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.1517ms with message 'null'
+2024-03-01 15:43:50.196 +01:00 [INF] GET /api/customers/
+2024-03-01 15:43:50.200 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:43:50.200 +01:00 [INF] Received HTTP response headers after 9402.049ms - 503
+2024-03-01 15:44:02.073 +01:00 [INF] Executing endpoint 'HTTP: GET api/customers/'
+2024-03-01 15:44:02.074 +01:00 [INF] 503
+2024-03-01 15:44:02.079 +01:00 [INF] End processing HTTP request after 21288.1362ms - 503
+2024-03-01 15:44:02.083 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 21284.6542ms
+2024-03-01 15:44:02.088 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:44:02.088 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[customer_id], [c].[active], [c].[address_id], [c].[create_date], [c].[email], [c].[first_name], [c].[last_name], [c].[last_update], [c].[store_id]
+FROM [customer] AS [c]
+2024-03-01 15:44:02.095 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:44:02.105 +01:00 [INF] Executed endpoint 'HTTP: GET api/customers/'
+2024-03-01 15:44:02.109 +01:00 [INF] 200
+2024-03-01 15:44:02.112 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/api/customers/ - 200 null application/json; charset=utf-8 11926.658ms
+2024-03-01 15:44:12.101 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:44:12.104 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:44:12.116 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:44:12.121 +01:00 [INF] GET /hc
+2024-03-01 15:44:24.716 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:44:24.720 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:44:24.720 +01:00 [INF] Received HTTP response headers after 12614.6527ms - 200
+2024-03-01 15:44:24.722 +01:00 [INF] 200
+2024-03-01 15:44:24.726 +01:00 [INF] End processing HTTP request after 12625.7081ms - 200
+2024-03-01 15:44:24.728 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 12612.169ms
+2024-03-01 15:44:24.732 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 15:44:24.739 +01:00 [INF] Saved 5 entities to in-memory store.
+2024-03-01 15:44:34.746 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:44:34.750 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:44:34.756 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:44:34.760 +01:00 [INF] GET /hc
+2024-03-01 15:44:34.761 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:44:34.766 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:44:34.766 +01:00 [INF] Received HTTP response headers after 11.3465ms - 200
+2024-03-01 15:44:34.768 +01:00 [INF] 200
+2024-03-01 15:44:34.771 +01:00 [INF] End processing HTTP request after 25.4062ms - 200
+2024-03-01 15:44:34.773 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 17.3864ms
+2024-03-01 15:44:34.775 +01:00 [INF] Saved 3 entities to in-memory store.
+2024-03-01 15:44:44.790 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:44:44.794 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:44:44.798 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:44:44.800 +01:00 [INF] GET /hc
+2024-03-01 15:44:44.802 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:44:44.806 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:44:44.806 +01:00 [INF] Received HTTP response headers after 9.6866ms - 200
+2024-03-01 15:44:44.808 +01:00 [INF] 200
+2024-03-01 15:44:44.810 +01:00 [INF] End processing HTTP request after 19.9274ms - 200
+2024-03-01 15:44:44.811 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 13.5816ms
+2024-03-01 15:44:44.813 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:44:54.828 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:44:54.834 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:44:54.838 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:44:54.842 +01:00 [INF] GET /hc
+2024-03-01 15:44:54.845 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:44:54.849 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:44:54.849 +01:00 [INF] Received HTTP response headers after 13.4724ms - 200
+2024-03-01 15:44:54.852 +01:00 [INF] 200
+2024-03-01 15:44:54.854 +01:00 [INF] End processing HTTP request after 25.3624ms - 200
+2024-03-01 15:44:54.856 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 18.5332ms
+2024-03-01 15:44:54.860 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:45:04.877 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:45:04.882 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:45:04.885 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:45:04.888 +01:00 [INF] GET /hc
+2024-03-01 15:45:04.889 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:45:04.891 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0066ms with message 'null'
+2024-03-01 15:45:04.896 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:45:04.896 +01:00 [INF] Received HTTP response headers after 12.0123ms - 503
+2024-03-01 15:45:04.897 +01:00 [INF] 503
+2024-03-01 15:45:04.899 +01:00 [INF] End processing HTTP request after 22.5288ms - 503
+2024-03-01 15:45:04.900 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 15.284ms
+2024-03-01 15:45:04.902 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 15:45:04.909 +01:00 [INF] Saved 5 entities to in-memory store.
+2024-03-01 15:45:14.920 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:45:14.924 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:45:14.928 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:45:14.933 +01:00 [INF] GET /hc
+2024-03-01 15:45:14.935 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:45:14.937 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0071ms with message 'null'
+2024-03-01 15:45:14.942 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:45:14.942 +01:00 [INF] Received HTTP response headers after 15.5574ms - 503
+2024-03-01 15:45:14.943 +01:00 [INF] 503
+2024-03-01 15:45:14.945 +01:00 [INF] End processing HTTP request after 25.1025ms - 503
+2024-03-01 15:45:14.947 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 18.3688ms
+2024-03-01 15:45:14.949 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:45:14.956 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:45:24.967 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:45:24.970 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:45:24.973 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:45:24.977 +01:00 [INF] GET /hc
+2024-03-01 15:45:24.978 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:45:24.981 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0059ms with message 'null'
+2024-03-01 15:45:24.986 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:45:24.986 +01:00 [INF] Received HTTP response headers after 14.6175ms - 503
+2024-03-01 15:45:24.988 +01:00 [INF] 503
+2024-03-01 15:45:24.990 +01:00 [INF] End processing HTTP request after 23.5763ms - 503
+2024-03-01 15:45:24.991 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 18.9968ms
+2024-03-01 15:45:24.993 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:45:25.000 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:45:31.474 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/api/customers - null null
+2024-03-01 15:45:31.479 +01:00 [INF] GET /api/customers
+2024-03-01 15:45:31.481 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-03-01 15:45:31.482 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-03-01 15:45:31.484 +01:00 [INF] 401
+2024-03-01 15:45:31.485 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/api/customers - 401 0 null 10.9825ms
+2024-03-01 15:45:35.009 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:45:35.012 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:45:35.016 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:45:35.021 +01:00 [INF] GET /hc
+2024-03-01 15:45:35.024 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:45:35.027 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0073ms with message 'null'
+2024-03-01 15:45:35.030 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:45:35.030 +01:00 [INF] Received HTTP response headers after 14.8939ms - 503
+2024-03-01 15:45:35.031 +01:00 [INF] 503
+2024-03-01 15:45:35.033 +01:00 [INF] End processing HTTP request after 23.79ms - 503
+2024-03-01 15:45:35.034 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 18.053ms
+2024-03-01 15:45:35.036 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:45:35.041 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:45:45.049 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:45:45.052 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:45:45.055 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:45:45.061 +01:00 [INF] GET /hc
+2024-03-01 15:45:45.062 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:45:45.064 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0155ms with message 'null'
+2024-03-01 15:45:45.069 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:45:45.069 +01:00 [INF] Received HTTP response headers after 14.9498ms - 503
+2024-03-01 15:45:45.071 +01:00 [INF] 503
+2024-03-01 15:45:45.074 +01:00 [INF] End processing HTTP request after 24.1592ms - 503
+2024-03-01 15:45:45.076 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 20.9684ms
+2024-03-01 15:45:45.078 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:45:45.085 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:45:55.097 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:45:55.100 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:45:55.107 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:45:55.110 +01:00 [INF] GET /hc
+2024-03-01 15:45:55.111 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:45:55.116 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.4838ms with message 'null'
+2024-03-01 15:45:55.125 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:45:55.125 +01:00 [INF] Received HTTP response headers after 19.4887ms - 503
+2024-03-01 15:45:55.126 +01:00 [INF] 503
+2024-03-01 15:45:55.129 +01:00 [INF] End processing HTTP request after 32.0772ms - 503
+2024-03-01 15:45:55.130 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 22.9445ms
+2024-03-01 15:45:55.132 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:45:55.136 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:46:05.139 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:46:05.146 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:46:05.149 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:46:05.154 +01:00 [INF] GET /hc
+2024-03-01 15:46:05.157 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:46:05.162 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:46:05.162 +01:00 [INF] Received HTTP response headers after 13.9806ms - 200
+2024-03-01 15:46:05.163 +01:00 [INF] 200
+2024-03-01 15:46:05.166 +01:00 [INF] End processing HTTP request after 26.6759ms - 200
+2024-03-01 15:46:05.167 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 18.4492ms
+2024-03-01 15:46:05.169 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 15:46:05.175 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:46:15.187 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:46:15.192 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:46:15.202 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:46:15.205 +01:00 [INF] GET /hc
+2024-03-01 15:46:15.207 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:46:15.211 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:46:15.211 +01:00 [INF] Received HTTP response headers after 17.7945ms - 200
+2024-03-01 15:46:15.212 +01:00 [INF] 200
+2024-03-01 15:46:15.214 +01:00 [INF] End processing HTTP request after 27.3505ms - 200
+2024-03-01 15:46:15.215 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 12.8366ms
+2024-03-01 15:46:15.217 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:46:25.230 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:46:25.237 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:46:25.241 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:46:25.245 +01:00 [INF] GET /hc
+2024-03-01 15:46:25.247 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:46:25.251 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:46:25.251 +01:00 [INF] Received HTTP response headers after 11.829ms - 200
+2024-03-01 15:46:25.253 +01:00 [INF] 200
+2024-03-01 15:46:25.255 +01:00 [INF] End processing HTTP request after 24.7168ms - 200
+2024-03-01 15:46:25.256 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 15.1594ms
+2024-03-01 15:46:25.259 +01:00 [INF] Saved 3 entities to in-memory store.
+2024-03-01 15:46:35.272 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:46:35.280 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:46:35.283 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:46:35.286 +01:00 [INF] GET /hc
+2024-03-01 15:46:35.287 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:46:35.291 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:46:35.292 +01:00 [INF] Received HTTP response headers after 10.4812ms - 200
+2024-03-01 15:46:35.293 +01:00 [INF] 200
+2024-03-01 15:46:35.295 +01:00 [INF] End processing HTTP request after 22.936ms - 200
+2024-03-01 15:46:35.297 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 14.2769ms
+2024-03-01 15:46:35.298 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:51:43.480 +01:00 [INF] User profile is available. Using 'C:\Users\marci\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-01 15:51:43.517 +01:00 [INF] Initializing UI Database
+2024-03-01 15:51:44.775 +01:00 [INF] Saving healthchecks configuration to database
+2024-03-01 15:51:44.887 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 15:51:45.232 +01:00 [INF] Now listening on: http://localhost:5220
+2024-03-01 15:51:45.244 +01:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-03-01 15:51:45.402 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:51:45.407 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:51:45.474 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-01 15:51:45.481 +01:00 [INF] Hosting environment: factory-lodz
+2024-03-01 15:51:45.483 +01:00 [INF] Content root path: C:\Users\marci\Projects\sages-abb-aspnetcore8\src\Sakila.Api
+2024-03-01 15:51:45.554 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:51:45.580 +01:00 [INF] GET /hc
+2024-03-01 15:51:45.683 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/ - null null
+2024-03-01 15:51:45.754 +01:00 [INF] GET /
+2024-03-01 15:51:45.848 +01:00 [INF] Executing endpoint 'HTTP: GET /'
+2024-03-01 15:51:45.848 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:51:45.859 +01:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2024-03-01 15:51:45.862 +01:00 [INF] Executed endpoint 'HTTP: GET /'
+2024-03-01 15:51:45.865 +01:00 [INF] 302
+2024-03-01 15:51:45.872 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/ - 302 0 null 189.123ms
+2024-03-01 15:51:45.875 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 2.269ms with message 'null'
+2024-03-01 15:51:45.882 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/swagger/index.html - null null
+2024-03-01 15:51:45.893 +01:00 [INF] GET /swagger/index.html
+2024-03-01 15:51:46.034 +01:00 [INF] 200
+2024-03-01 15:51:46.036 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/swagger/index.html - 200 null text/html;charset=utf-8 154.2239ms
+2024-03-01 15:51:46.325 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:51:46.330 +01:00 [INF] Received HTTP response headers after 915.951ms - 503
+2024-03-01 15:51:46.330 +01:00 [INF] 503
+2024-03-01 15:51:46.335 +01:00 [INF] End processing HTTP request after 938.6595ms - 503
+2024-03-01 15:51:46.336 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 796.3177ms
+2024-03-01 15:51:46.348 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-01 15:51:46.350 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/_vs/browserLink - null null
+2024-03-01 15:51:46.359 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 10.3694ms
+2024-03-01 15:51:46.438 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/_vs/browserLink - 200 null text/javascript; charset=UTF-8 88.0792ms
+2024-03-01 15:51:46.521 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 15:51:46.521 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/swagger/v1/swagger.json - null null
+2024-03-01 15:51:46.528 +01:00 [INF] GET /swagger/v1/swagger.json
+2024-03-01 15:51:46.675 +01:00 [INF] 200
+2024-03-01 15:51:46.676 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 155.3292ms
+2024-03-01 15:51:46.697 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:51:56.885 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:51:56.890 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:51:56.894 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:51:56.899 +01:00 [INF] GET /hc
+2024-03-01 15:51:56.903 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:51:56.908 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0141ms with message 'null'
+2024-03-01 15:51:56.918 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:51:56.918 +01:00 [INF] Received HTTP response headers after 25.52ms - 503
+2024-03-01 15:51:56.919 +01:00 [INF] 503
+2024-03-01 15:51:56.921 +01:00 [INF] End processing HTTP request after 35.8725ms - 503
+2024-03-01 15:51:56.922 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 28.8494ms
+2024-03-01 15:51:56.935 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:51:56.952 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:52:06.976 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:52:06.982 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:52:06.985 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:52:06.990 +01:00 [INF] GET /hc
+2024-03-01 15:52:06.991 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:52:06.995 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:52:06.996 +01:00 [INF] Received HTTP response headers after 12.5061ms - 200
+2024-03-01 15:52:06.997 +01:00 [INF] 200
+2024-03-01 15:52:06.999 +01:00 [INF] End processing HTTP request after 23.3999ms - 200
+2024-03-01 15:52:07.000 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 15.9561ms
+2024-03-01 15:52:07.006 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 15:52:07.028 +01:00 [INF] Saved 5 entities to in-memory store.
+2024-03-01 15:52:17.047 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:52:17.050 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:52:17.054 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:52:17.057 +01:00 [INF] GET /hc
+2024-03-01 15:52:17.059 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:52:17.063 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:52:17.063 +01:00 [INF] Received HTTP response headers after 10.5233ms - 200
+2024-03-01 15:52:17.065 +01:00 [INF] 200
+2024-03-01 15:52:17.066 +01:00 [INF] End processing HTTP request after 18.9727ms - 200
+2024-03-01 15:52:17.068 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 15.1667ms
+2024-03-01 15:52:17.073 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:52:27.081 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:52:27.084 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:52:27.086 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:52:27.091 +01:00 [INF] GET /hc
+2024-03-01 15:52:27.093 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:52:27.097 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:52:27.097 +01:00 [INF] Received HTTP response headers after 11.8781ms - 200
+2024-03-01 15:52:27.099 +01:00 [INF] 200
+2024-03-01 15:52:27.100 +01:00 [INF] End processing HTTP request after 19.4976ms - 200
+2024-03-01 15:52:27.102 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 15.8835ms
+2024-03-01 15:52:27.106 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:52:28.049 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/api/customers/ - null null
+2024-03-01 15:52:28.054 +01:00 [INF] GET /api/customers/
+2024-03-01 15:52:28.065 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-03-01 15:52:28.070 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-03-01 15:52:28.073 +01:00 [INF] 401
+2024-03-01 15:52:28.075 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/api/customers/ - 401 0 null 26.0826ms
+2024-03-01 15:52:29.580 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/api/customers/ - null null
+2024-03-01 15:52:29.584 +01:00 [INF] GET /api/customers/
+2024-03-01 15:52:29.588 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-03-01 15:52:29.590 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-03-01 15:52:29.592 +01:00 [INF] 401
+2024-03-01 15:52:29.594 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/api/customers/ - 401 0 null 13.8523ms
+2024-03-01 15:52:37.123 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:52:37.127 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:52:37.130 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:52:37.133 +01:00 [INF] GET /hc
+2024-03-01 15:52:37.135 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:52:37.139 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:52:37.139 +01:00 [INF] Received HTTP response headers after 10.023ms - 200
+2024-03-01 15:52:37.140 +01:00 [INF] 200
+2024-03-01 15:52:37.142 +01:00 [INF] End processing HTTP request after 19.0249ms - 200
+2024-03-01 15:52:37.144 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 13.746ms
+2024-03-01 15:52:37.147 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:52:47.159 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:52:47.164 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:52:47.168 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:52:47.171 +01:00 [INF] GET /hc
+2024-03-01 15:52:47.173 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:52:47.178 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:52:47.178 +01:00 [INF] Received HTTP response headers after 11.8974ms - 200
+2024-03-01 15:52:47.180 +01:00 [INF] 200
+2024-03-01 15:52:47.181 +01:00 [INF] End processing HTTP request after 22.2405ms - 200
+2024-03-01 15:52:47.183 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 15.4028ms
+2024-03-01 15:52:47.186 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:52:57.202 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:52:57.206 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:52:57.210 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:52:57.213 +01:00 [INF] GET /hc
+2024-03-01 15:52:57.215 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:52:57.219 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:52:57.219 +01:00 [INF] Received HTTP response headers after 10.2438ms - 200
+2024-03-01 15:52:57.220 +01:00 [INF] 200
+2024-03-01 15:52:57.222 +01:00 [INF] End processing HTTP request after 20.5185ms - 200
+2024-03-01 15:52:57.223 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 13.1033ms
+2024-03-01 15:52:57.226 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:53:07.234 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:53:07.237 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:53:07.241 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:53:07.246 +01:00 [INF] GET /hc
+2024-03-01 15:53:07.248 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:53:07.251 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.1342ms with message 'null'
+2024-03-01 15:53:07.255 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:53:07.255 +01:00 [INF] Received HTTP response headers after 15.5062ms - 503
+2024-03-01 15:53:07.257 +01:00 [INF] 503
+2024-03-01 15:53:07.259 +01:00 [INF] End processing HTTP request after 24.917ms - 503
+2024-03-01 15:53:07.260 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 19.4719ms
+2024-03-01 15:53:07.263 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 15:53:07.268 +01:00 [INF] Saved 5 entities to in-memory store.
+2024-03-01 15:53:17.284 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:53:17.289 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:53:17.293 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:53:17.297 +01:00 [INF] GET /hc
+2024-03-01 15:53:17.299 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:53:17.303 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0105ms with message 'null'
+2024-03-01 15:53:17.309 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:53:17.309 +01:00 [INF] Received HTTP response headers after 17.0672ms - 503
+2024-03-01 15:53:17.311 +01:00 [INF] 503
+2024-03-01 15:53:17.313 +01:00 [INF] End processing HTTP request after 28.8138ms - 503
+2024-03-01 15:53:17.315 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 22.1425ms
+2024-03-01 15:53:17.319 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:53:17.327 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:53:27.340 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:53:27.344 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:53:27.347 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:53:27.351 +01:00 [INF] GET /hc
+2024-03-01 15:53:27.353 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:53:27.356 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0063ms with message 'null'
+2024-03-01 15:53:27.360 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:53:27.360 +01:00 [INF] Received HTTP response headers after 14.9398ms - 503
+2024-03-01 15:53:27.362 +01:00 [INF] 503
+2024-03-01 15:53:27.364 +01:00 [INF] End processing HTTP request after 23.5431ms - 503
+2024-03-01 15:53:27.365 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 19.0993ms
+2024-03-01 15:53:27.368 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:53:27.375 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:53:37.394 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:53:37.397 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:53:37.400 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:53:37.404 +01:00 [INF] GET /hc
+2024-03-01 15:53:37.406 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:53:37.408 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0062ms with message 'null'
+2024-03-01 15:53:37.413 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:53:37.414 +01:00 [INF] Received HTTP response headers after 14.605ms - 503
+2024-03-01 15:53:37.416 +01:00 [INF] 503
+2024-03-01 15:53:37.418 +01:00 [INF] End processing HTTP request after 24.1432ms - 503
+2024-03-01 15:53:37.419 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 19.5903ms
+2024-03-01 15:53:37.422 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:53:37.429 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:53:47.438 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:53:47.441 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:53:47.453 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:53:47.461 +01:00 [INF] GET /hc
+2024-03-01 15:53:47.463 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:53:47.465 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0783ms with message 'null'
+2024-03-01 15:53:47.470 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:53:47.470 +01:00 [INF] Received HTTP response headers after 26.7348ms - 503
+2024-03-01 15:53:47.471 +01:00 [INF] 503
+2024-03-01 15:53:47.473 +01:00 [INF] End processing HTTP request after 34.6804ms - 503
+2024-03-01 15:53:47.474 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 21.1283ms
+2024-03-01 15:53:47.476 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:53:47.481 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:53:57.488 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:53:57.492 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:53:57.496 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:53:57.502 +01:00 [INF] GET /hc
+2024-03-01 15:53:57.505 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:53:57.507 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.1599ms with message 'null'
+2024-03-01 15:53:57.511 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:53:57.511 +01:00 [INF] Received HTTP response headers after 15.966ms - 503
+2024-03-01 15:53:57.512 +01:00 [INF] 503
+2024-03-01 15:53:57.515 +01:00 [INF] End processing HTTP request after 26.5197ms - 503
+2024-03-01 15:53:57.516 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 20.3218ms
+2024-03-01 15:53:57.518 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:53:57.524 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:54:07.528 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:54:07.533 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:54:07.538 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:54:07.542 +01:00 [INF] GET /hc
+2024-03-01 15:54:07.547 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:54:07.552 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:54:07.552 +01:00 [INF] Received HTTP response headers after 16.2502ms - 200
+2024-03-01 15:54:07.555 +01:00 [INF] 200
+2024-03-01 15:54:07.557 +01:00 [INF] End processing HTTP request after 29.5227ms - 200
+2024-03-01 15:54:07.561 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 23.7944ms
+2024-03-01 15:54:07.564 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 15:54:07.569 +01:00 [INF] Saved 5 entities to in-memory store.
+2024-03-01 15:54:17.578 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:54:17.582 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:54:17.586 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:54:17.590 +01:00 [INF] GET /hc
+2024-03-01 15:54:17.593 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:54:17.599 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:54:17.600 +01:00 [INF] Received HTTP response headers after 15.9561ms - 200
+2024-03-01 15:54:17.602 +01:00 [INF] 200
+2024-03-01 15:54:17.603 +01:00 [INF] End processing HTTP request after 24.7393ms - 200
+2024-03-01 15:54:17.604 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 19.1618ms
+2024-03-01 15:54:17.607 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:54:27.626 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:54:27.629 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:54:27.634 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:54:27.639 +01:00 [INF] GET /hc
+2024-03-01 15:54:27.641 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:54:27.646 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:54:27.646 +01:00 [INF] Received HTTP response headers after 13.8905ms - 200
+2024-03-01 15:54:27.648 +01:00 [INF] 200
+2024-03-01 15:54:27.650 +01:00 [INF] End processing HTTP request after 24.107ms - 200
+2024-03-01 15:54:27.652 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 19.2134ms
+2024-03-01 15:54:27.656 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:54:37.668 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:54:37.672 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:54:37.676 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:54:37.681 +01:00 [INF] GET /hc
+2024-03-01 15:54:37.682 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:54:37.688 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:54:37.689 +01:00 [INF] Received HTTP response headers after 14.178ms - 200
+2024-03-01 15:54:37.690 +01:00 [INF] 200
+2024-03-01 15:54:37.691 +01:00 [INF] End processing HTTP request after 23.1166ms - 200
+2024-03-01 15:54:37.692 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 16.5592ms
+2024-03-01 15:54:37.695 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:54:47.716 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:54:47.720 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:54:47.725 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:54:47.733 +01:00 [INF] GET /hc
+2024-03-01 15:54:47.735 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:54:47.740 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:54:47.740 +01:00 [INF] Received HTTP response headers after 15.3904ms - 200
+2024-03-01 15:54:47.741 +01:00 [INF] 200
+2024-03-01 15:54:47.743 +01:00 [INF] End processing HTTP request after 27.378ms - 200
+2024-03-01 15:54:47.745 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 19.8251ms
+2024-03-01 15:54:47.747 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:54:57.765 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:54:57.769 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:54:57.774 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:54:57.779 +01:00 [INF] GET /hc
+2024-03-01 15:54:57.782 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:54:57.786 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:54:57.787 +01:00 [INF] Received HTTP response headers after 14.9138ms - 200
+2024-03-01 15:54:57.788 +01:00 [INF] 200
+2024-03-01 15:54:57.791 +01:00 [INF] End processing HTTP request after 25.4481ms - 200
+2024-03-01 15:54:57.792 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 19.464ms
+2024-03-01 15:54:57.794 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:55:07.818 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:55:07.821 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:55:07.825 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:55:07.829 +01:00 [INF] GET /hc
+2024-03-01 15:55:07.831 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:55:07.833 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0253ms with message 'null'
+2024-03-01 15:55:07.837 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:55:07.837 +01:00 [INF] Received HTTP response headers after 13.2451ms - 503
+2024-03-01 15:55:07.839 +01:00 [INF] 503
+2024-03-01 15:55:07.841 +01:00 [INF] End processing HTTP request after 23.485ms - 503
+2024-03-01 15:55:07.842 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 17.4248ms
+2024-03-01 15:55:07.844 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 15:55:07.850 +01:00 [INF] Saved 5 entities to in-memory store.
+2024-03-01 15:55:17.854 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:55:17.858 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:55:17.862 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:55:17.866 +01:00 [INF] GET /hc
+2024-03-01 15:55:17.868 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:55:17.871 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.079ms with message 'null'
+2024-03-01 15:55:17.874 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:55:17.874 +01:00 [INF] Received HTTP response headers after 13.2806ms - 503
+2024-03-01 15:55:17.876 +01:00 [INF] 503
+2024-03-01 15:55:17.878 +01:00 [INF] End processing HTTP request after 23.8931ms - 503
+2024-03-01 15:55:17.879 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 17.099ms
+2024-03-01 15:55:17.881 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:55:17.887 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:55:27.894 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:55:27.898 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:55:27.902 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:55:27.906 +01:00 [INF] GET /hc
+2024-03-01 15:55:27.909 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:55:27.913 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.1083ms with message 'null'
+2024-03-01 15:55:27.920 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:55:27.921 +01:00 [INF] Received HTTP response headers after 19.6822ms - 503
+2024-03-01 15:55:27.922 +01:00 [INF] 503
+2024-03-01 15:55:27.924 +01:00 [INF] End processing HTTP request after 29.2485ms - 503
+2024-03-01 15:55:27.925 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 23.0383ms
+2024-03-01 15:55:27.927 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:55:27.932 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:55:37.946 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:55:37.953 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:55:37.958 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:55:37.963 +01:00 [INF] GET /hc
+2024-03-01 15:55:37.964 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:55:37.967 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0061ms with message 'null'
+2024-03-01 15:55:37.971 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:55:37.971 +01:00 [INF] Received HTTP response headers after 14.2999ms - 503
+2024-03-01 15:55:37.973 +01:00 [INF] 503
+2024-03-01 15:55:37.975 +01:00 [INF] End processing HTTP request after 29.0199ms - 503
+2024-03-01 15:55:37.976 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 18.3427ms
+2024-03-01 15:55:37.979 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:55:37.986 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:55:48.002 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:55:48.008 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:55:48.015 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:55:48.024 +01:00 [INF] GET /hc
+2024-03-01 15:55:48.026 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:55:48.028 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0057ms with message 'null'
+2024-03-01 15:55:48.032 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:55:48.032 +01:00 [INF] Received HTTP response headers after 22.3577ms - 503
+2024-03-01 15:55:48.034 +01:00 [INF] 503
+2024-03-01 15:55:48.035 +01:00 [INF] End processing HTTP request after 33.043ms - 503
+2024-03-01 15:55:48.036 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 20.7024ms
+2024-03-01 15:55:48.038 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:55:48.043 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:55:58.054 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:55:58.059 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:55:58.064 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:55:58.070 +01:00 [INF] GET /hc
+2024-03-01 15:55:58.073 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:55:58.074 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0079ms with message 'null'
+2024-03-01 15:55:58.078 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:55:58.078 +01:00 [INF] Received HTTP response headers after 16.163ms - 503
+2024-03-01 15:55:58.081 +01:00 [INF] 503
+2024-03-01 15:55:58.083 +01:00 [INF] End processing HTTP request after 28.879ms - 503
+2024-03-01 15:55:58.085 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 503 null application/json 21.4923ms
+2024-03-01 15:55:58.088 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 15:55:58.094 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:56:08.111 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:56:08.118 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:56:08.122 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:56:08.126 +01:00 [INF] GET /hc
+2024-03-01 15:56:08.128 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:56:08.132 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:56:08.132 +01:00 [INF] Received HTTP response headers after 11.8118ms - 200
+2024-03-01 15:56:08.138 +01:00 [INF] 200
+2024-03-01 15:56:08.140 +01:00 [INF] End processing HTTP request after 29.6605ms - 200
+2024-03-01 15:56:08.144 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 22.2802ms
+2024-03-01 15:56:08.147 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 15:56:08.152 +01:00 [INF] Saved 5 entities to in-memory store.
+2024-03-01 15:56:18.156 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:56:18.159 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:56:18.163 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:56:18.167 +01:00 [INF] GET /hc
+2024-03-01 15:56:18.169 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:56:18.174 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:56:18.174 +01:00 [INF] Received HTTP response headers after 12.1913ms - 200
+2024-03-01 15:56:18.176 +01:00 [INF] 200
+2024-03-01 15:56:18.177 +01:00 [INF] End processing HTTP request after 21.2076ms - 200
+2024-03-01 15:56:18.178 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 15.3833ms
+2024-03-01 15:56:18.181 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 15:56:28.193 +01:00 [INF] Start processing HTTP request GET http://localhost:5220/hc
+2024-03-01 15:56:28.198 +01:00 [INF] Sending HTTP request GET http://localhost:5220/hc
+2024-03-01 15:56:28.201 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/hc - null null
+2024-03-01 15:56:28.205 +01:00 [INF] GET /hc
+2024-03-01 15:56:28.207 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 15:56:28.211 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 15:56:28.211 +01:00 [INF] Received HTTP response headers after 11.6287ms - 200
+2024-03-01 15:56:28.213 +01:00 [INF] 200
+2024-03-01 15:56:28.216 +01:00 [INF] End processing HTTP request after 22.8713ms - 200
+2024-03-01 15:56:28.218 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/hc - 200 null application/json 16.3389ms
+2024-03-01 15:56:28.221 +01:00 [INF] Saved 4 entities to in-memory store.

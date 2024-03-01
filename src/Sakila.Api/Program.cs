@@ -14,7 +14,10 @@ using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using HealthChecks.UI.Client;
 using Microsoft.Extensions.DependencyInjection;
 using Sakila.Api.Services;
-   
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+
 var builder = WebApplication.CreateBuilder(args);
 
 string env = builder.Environment.EnvironmentName;
@@ -75,6 +78,36 @@ builder.Services
     })
     .AddInMemoryStorage();
 
+var secretKey = "your-256-bit-secret-your-256-bit-secret-your-256-bit-secret-your-256-bit-secret";
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey)),
+        ValidateIssuer = true,
+        ValidIssuer = "http://sages.pl",
+        ValidateAudience = true,
+        ValidAudience = "http://abb.com"
+    };
+
+    options.Events = new JwtBearerEvents
+    {
+        OnMessageReceived = context =>
+        {
+            context.Token = context.Request.Cookies["your-jwt-from-cookie"];
+            return Task.CompletedTask;
+        }
+    };
+});
+
+builder.Services.AddAuthorization();
+
 var app = builder.Build();
 
 app.MapHealthChecks("/hc", new  HealthCheckOptions
@@ -91,6 +124,10 @@ app.UseSwaggerUI();
 
 
 app.UseRouting();
+
+
+app.UseAuthentication();
+app.UseAuthorization();
 
 //app.MapGet("/", ([FromHeader(Name = "x-code")] string? code) => $"Hello {code}!!!");
 app.MapHealthChecksUI(options => options.UIPath = "/dashboard");

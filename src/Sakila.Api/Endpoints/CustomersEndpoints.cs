@@ -18,8 +18,12 @@ public static class CustomersEndpoints
             mapService.Show(latitude, longitude);
         });
 
+        // [Authorize(Roles = "trainer")]
+        // [Authorize(Policy = "isadult")]
+
         // GET api/customers
-        group.MapGet("/", async (ICustomerRepository repository) => await repository.GetAllAsync());
+        group.MapGet("/", async (ICustomerRepository repository) => await repository.GetAllAsync())
+            .RequireAuthorization();
 
         // GET api/customers/{id}
         group.MapGet("/{id}", async (int id, ICustomerRepository repository) => await repository.GetAsync(id) switch
