@@ -13,8 +13,20 @@ using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using HealthChecks.UI.Client;
 using Microsoft.Extensions.DependencyInjection;
+using Sakila.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
+string env = builder.Environment.EnvironmentName;
+builder.Configuration.AddJsonFile($"appsettings.{env}.json", optional: true);
+builder.Configuration.AddJsonFile($"appsettings.{env}.ziemowit.json", optional: true);
+
+builder.Configuration.AddXmlFile("appsettings.xml", optional: true);
+
+string? googleMapUrl = builder.Configuration["GoogleMap:Url"];
+
+builder.Services.AddTransient<IMapService, GoogleMapService>();
+builder.Services.Configure<GoogleMapServiceOptions>(builder.Configuration.GetSection("GoogleMap"));
 
 builder.AddDbRepositories();
 
@@ -40,7 +52,8 @@ var logger = new LoggerConfiguration()
 
 builder.Logging.AddSerilog(logger);
 
-builder.Services.AddHealthChecks().AddSqlServer(builder.Configuration.GetConnectionString("SakilaConnection") , name: "SakilaDb-check")
+builder.Services.AddHealthChecks()
+    .AddSqlServer(builder.Configuration.GetConnectionString("SakilaConnection") , name: "SakilaDb-check")
     .AddCheck("Ping", () => HealthCheckResult.Healthy())
     .AddCheck("Random", () =>
     {

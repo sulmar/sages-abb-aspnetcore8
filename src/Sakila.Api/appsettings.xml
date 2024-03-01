@@ -1,0 +1,7 @@
+﻿<configuration>
+
+	<GoogleMap>
+		<Url>http://xml-maps.google.com</Url>
+	</GoogleMap>
+
+</configuration>

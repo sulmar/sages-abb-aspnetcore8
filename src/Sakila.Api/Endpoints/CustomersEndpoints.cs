@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
+using Sakila.Api.Services;
 using Sakila.Domain.Abstractions;
 using Sakila.Domain.Model;
 
@@ -7,6 +9,15 @@ public static class CustomersEndpoints
 {
     public static RouteGroupBuilder MapCustomersApi(this RouteGroupBuilder group)
     {
+        // GET api/customers/map?lat=51&lng=21
+        group.MapGet("/map", async (
+            IMapService mapService,
+            [FromQuery(Name = "lat")] float latitude,
+            [FromQuery(Name = "lng")] float longitude) =>
+        {
+            mapService.Show(latitude, longitude);
+        });
+
         // GET api/customers
         group.MapGet("/", async (ICustomerRepository repository) => await repository.GetAllAsync());
 

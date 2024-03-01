@@ -18,6 +18,15 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
+    "http-factory-lodz": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:5220",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "factory-lodz"
+      }
+    },
     "dev": {
       "commandName": "Project",
       "dotnetRunMessages": true,

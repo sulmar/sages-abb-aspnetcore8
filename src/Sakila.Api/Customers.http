@@ -10,5 +10,10 @@ Accept: application/json
 ###
 GET {{baseUri}}/api/customers/1
 
+### 
+GET {{baseUri}}/api/customers/map?lat=51&lng=21
+
+###
+
 
 

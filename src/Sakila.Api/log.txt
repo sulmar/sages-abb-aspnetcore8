@@ -1201,3 +1201,845 @@ Error Number:4060,State:1,Class:11
 2024-02-29 17:18:19.979 +01:00 [INF] 200
 2024-02-29 17:18:19.997 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/healthchecks-api/ui-settings - 200 null application/json; charset=utf-8 90.457ms
 2024-02-29 17:18:20.004 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/healthchecks-webhooks - 200 null application/json; charset=utf-8 97.4446ms
+2024-03-01 08:45:41.835 +01:00 [INF] Initializing UI Database
+2024-03-01 08:45:42.923 +01:00 [INF] Saving healthchecks configuration to database
+2024-03-01 08:45:43.006 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 08:45:43.497 +01:00 [INF] Now listening on: https://localhost:7218
+2024-03-01 08:45:43.500 +01:00 [INF] Now listening on: http://localhost:5220
+2024-03-01 08:45:43.516 +01:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-03-01 08:45:44.302 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/ - null null
+2024-03-01 08:45:44.459 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 08:45:44.466 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 08:45:44.513 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-01 08:45:44.515 +01:00 [INF] Hosting environment: Development
+2024-03-01 08:45:44.516 +01:00 [INF] Content root path: C:\Users\marci\Projects\sages-abb-aspnetcore8\src\Sakila.Api
+2024-03-01 08:45:44.598 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 08:45:44.604 +01:00 [INF] GET /hc
+2024-03-01 08:45:44.623 +01:00 [INF] GET /
+2024-03-01 08:45:44.757 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 08:45:44.757 +01:00 [INF] Executing endpoint 'HTTP: GET /'
+2024-03-01 08:45:44.773 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 1.7974ms with message 'null'
+2024-03-01 08:45:44.806 +01:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2024-03-01 08:45:44.809 +01:00 [INF] Executed endpoint 'HTTP: GET /'
+2024-03-01 08:45:44.811 +01:00 [INF] 302
+2024-03-01 08:45:44.816 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/ - 302 0 null 518.8959ms
+2024-03-01 08:45:44.820 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/swagger/index.html - null null
+2024-03-01 08:45:44.827 +01:00 [INF] GET /swagger/index.html
+2024-03-01 08:45:44.910 +01:00 [INF] 200
+2024-03-01 08:45:44.913 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/swagger/index.html - 200 null text/html;charset=utf-8 92.7342ms
+2024-03-01 08:45:44.923 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-01 08:45:44.924 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/_vs/browserLink - null null
+2024-03-01 08:45:44.946 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 23.947ms
+2024-03-01 08:45:45.036 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/_vs/browserLink - 200 null text/javascript; charset=UTF-8 112.469ms
+2024-03-01 08:45:45.117 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/swagger/v1/swagger.json - null null
+2024-03-01 08:45:45.123 +01:00 [INF] GET /swagger/v1/swagger.json
+2024-03-01 08:45:45.318 +01:00 [INF] 200
+2024-03-01 08:45:45.320 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 203.4481ms
+2024-03-01 08:45:55.752 +01:00 [ERR] Health check SakilaDb-check with status "Unhealthy" completed after 10986.7826ms with message 'null'
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "sakilaXXX" requested by the login. The login failed.
+Login failed for user 'DESKTOP-RCJ2PV1\marci'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at HealthChecks.SqlServer.SqlServerHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in /_/src/HealthChecks.SqlServer/SqlServerHealthCheck.cs:line 28
+ClientConnectionId:9dbfc93f-6594-4d80-9a68-8ac223ec59cd
+Error Number:4060,State:1,Class:11
+2024-03-01 08:45:55.935 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 08:45:55.941 +01:00 [INF] Received HTTP response headers after 11466.8829ms - 503
+2024-03-01 08:45:55.941 +01:00 [INF] 503
+2024-03-01 08:45:55.944 +01:00 [INF] End processing HTTP request after 11489.7823ms - 503
+2024-03-01 08:45:55.946 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 503 null application/json 11347.8134ms
+2024-03-01 08:45:56.058 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 08:45:56.160 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 08:46:06.206 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 08:46:06.211 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 08:46:06.215 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 08:46:06.219 +01:00 [INF] GET /hc
+2024-03-01 08:46:06.222 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 08:46:16.253 +01:00 [ERR] Health check SakilaDb-check with status "Unhealthy" completed after 10029.3625ms with message 'null'
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "sakilaXXX" requested by the login. The login failed.
+Login failed for user 'DESKTOP-RCJ2PV1\marci'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at HealthChecks.SqlServer.SqlServerHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in /_/src/HealthChecks.SqlServer/SqlServerHealthCheck.cs:line 28
+ClientConnectionId:f47fc095-e8a8-4509-b636-71ab3b0f2176
+Error Number:4060,State:1,Class:11
+2024-03-01 08:46:16.281 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 08:46:16.281 +01:00 [INF] Received HTTP response headers after 10068.2583ms - 503
+2024-03-01 08:46:16.282 +01:00 [INF] 503
+2024-03-01 08:46:16.283 +01:00 [INF] End processing HTTP request after 10077.8491ms - 503
+2024-03-01 08:46:16.285 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 503 null application/json 10069.8495ms
+2024-03-01 08:46:16.295 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 08:46:16.307 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 08:46:26.315 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 08:46:26.320 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 08:46:26.324 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 08:46:26.328 +01:00 [INF] GET /hc
+2024-03-01 08:46:26.329 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 08:46:36.367 +01:00 [ERR] Health check SakilaDb-check with status "Unhealthy" completed after 10035.6789ms with message 'null'
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "sakilaXXX" requested by the login. The login failed.
+Login failed for user 'DESKTOP-RCJ2PV1\marci'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at HealthChecks.SqlServer.SqlServerHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in /_/src/HealthChecks.SqlServer/SqlServerHealthCheck.cs:line 28
+ClientConnectionId:f67cb688-b8c2-4cb9-bd04-0e14e9294d8f
+Error Number:4060,State:1,Class:11
+2024-03-01 08:46:36.388 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 08:46:36.388 +01:00 [INF] Received HTTP response headers after 10066.3738ms - 503
+2024-03-01 08:46:36.389 +01:00 [INF] 503
+2024-03-01 08:46:36.391 +01:00 [INF] End processing HTTP request after 10075.9822ms - 503
+2024-03-01 08:46:36.393 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 503 null application/json 10068.9668ms
+2024-03-01 08:46:36.395 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 08:46:36.401 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 08:46:46.412 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 08:46:46.414 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 08:46:46.417 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 08:46:46.420 +01:00 [INF] GET /hc
+2024-03-01 08:46:46.422 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 08:46:46.426 +01:00 [ERR] Health check SakilaDb-check with status "Unhealthy" completed after 2.4441ms with message 'null'
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "sakilaXXX" requested by the login. The login failed.
+Login failed for user 'DESKTOP-RCJ2PV1\marci'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at HealthChecks.SqlServer.SqlServerHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in /_/src/HealthChecks.SqlServer/SqlServerHealthCheck.cs:line 28
+ClientConnectionId:f67cb688-b8c2-4cb9-bd04-0e14e9294d8f
+Error Number:4060,State:1,Class:11
+2024-03-01 08:46:46.436 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 08:46:46.436 +01:00 [INF] Received HTTP response headers after 19.8405ms - 503
+2024-03-01 08:46:46.438 +01:00 [INF] 503
+2024-03-01 08:46:46.439 +01:00 [INF] End processing HTTP request after 27.333ms - 503
+2024-03-01 08:46:46.440 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 503 null application/json 22.9501ms
+2024-03-01 08:46:46.442 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 08:46:46.448 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 08:46:56.445 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 08:46:56.448 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 08:46:56.455 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 08:46:56.457 +01:00 [INF] GET /hc
+2024-03-01 08:46:56.459 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 08:47:06.497 +01:00 [ERR] Health check SakilaDb-check with status "Unhealthy" completed after 10036.8052ms with message 'null'
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "sakilaXXX" requested by the login. The login failed.
+Login failed for user 'DESKTOP-RCJ2PV1\marci'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at HealthChecks.SqlServer.SqlServerHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in /_/src/HealthChecks.SqlServer/SqlServerHealthCheck.cs:line 28
+ClientConnectionId:fc79b851-1990-43d3-870f-b05f5ddef8ff
+Error Number:4060,State:1,Class:11
+2024-03-01 08:47:06.519 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 08:47:06.519 +01:00 [INF] Received HTTP response headers after 10066.5241ms - 503
+2024-03-01 08:47:06.522 +01:00 [INF] 503
+2024-03-01 08:47:06.525 +01:00 [INF] End processing HTTP request after 10079.8097ms - 503
+2024-03-01 08:47:06.527 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 503 null application/json 10073.2265ms
+2024-03-01 08:47:06.531 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 08:47:06.537 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 08:47:16.532 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 08:47:16.535 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 08:47:16.537 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 08:47:16.540 +01:00 [INF] GET /hc
+2024-03-01 08:47:16.541 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 08:47:16.543 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0088ms with message 'null'
+2024-03-01 08:47:16.544 +01:00 [ERR] Health check SakilaDb-check with status "Unhealthy" completed after 1.7482ms with message 'null'
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "sakilaXXX" requested by the login. The login failed.
+Login failed for user 'DESKTOP-RCJ2PV1\marci'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at HealthChecks.SqlServer.SqlServerHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in /_/src/HealthChecks.SqlServer/SqlServerHealthCheck.cs:line 28
+ClientConnectionId:fc79b851-1990-43d3-870f-b05f5ddef8ff
+Error Number:4060,State:1,Class:11
+2024-03-01 08:47:16.556 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 08:47:16.556 +01:00 [INF] Received HTTP response headers after 20.2545ms - 503
+2024-03-01 08:47:16.557 +01:00 [INF] 503
+2024-03-01 08:47:16.559 +01:00 [INF] End processing HTTP request after 26.9977ms - 503
+2024-03-01 08:47:16.560 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 503 null application/json 23.1349ms
+2024-03-01 08:47:16.562 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 08:47:16.568 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 08:47:20.395 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/dashboard - null null
+2024-03-01 08:47:20.407 +01:00 [INF] GET /dashboard
+2024-03-01 08:47:20.409 +01:00 [INF] Executing endpoint 'HTTP: GET /dashboard'
+2024-03-01 08:47:20.416 +01:00 [INF] Executed endpoint 'HTTP: GET /dashboard'
+2024-03-01 08:47:20.417 +01:00 [INF] 200
+2024-03-01 08:47:20.420 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/dashboard - 200 null text/html 25.7551ms
+2024-03-01 08:47:20.438 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/ui/resources/healthchecksui-min.css - null null
+2024-03-01 08:47:20.439 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/ui/resources/vendors-dll.js - null null
+2024-03-01 08:47:20.439 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-01 08:47:20.444 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/ui/resources/healthchecks-bundle.js - null null
+2024-03-01 08:47:20.451 +01:00 [INF] GET /ui/resources/vendors-dll.js
+2024-03-01 08:47:20.448 +01:00 [INF] GET /ui/resources/healthchecksui-min.css
+2024-03-01 08:47:20.470 +01:00 [INF] GET /ui/resources/healthchecks-bundle.js
+2024-03-01 08:47:20.445 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/_vs/browserLink - null null
+2024-03-01 08:47:20.455 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 16.8354ms
+2024-03-01 08:47:20.472 +01:00 [INF] Executing endpoint 'HTTP: GET /ui/resources/vendors-dll.js'
+2024-03-01 08:47:20.475 +01:00 [INF] Executing endpoint 'HTTP: GET /ui/resources/healthchecks-bundle.js'
+2024-03-01 08:47:20.474 +01:00 [INF] Executing endpoint 'HTTP: GET /ui/resources/healthchecksui-min.css'
+2024-03-01 08:47:20.504 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/_vs/browserLink - 200 null text/javascript; charset=UTF-8 58.6818ms
+2024-03-01 08:47:20.509 +01:00 [INF] Executed endpoint 'HTTP: GET /ui/resources/healthchecksui-min.css'
+2024-03-01 08:47:20.517 +01:00 [INF] 200
+2024-03-01 08:47:20.518 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/ui/resources/healthchecksui-min.css - 200 null text/css 80.8847ms
+2024-03-01 08:47:20.520 +01:00 [INF] Executed endpoint 'HTTP: GET /ui/resources/vendors-dll.js'
+2024-03-01 08:47:20.530 +01:00 [INF] 200
+2024-03-01 08:47:20.530 +01:00 [INF] Executed endpoint 'HTTP: GET /ui/resources/healthchecks-bundle.js'
+2024-03-01 08:47:20.531 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/ui/resources/vendors-dll.js - 200 null text/javascript 92.4138ms
+2024-03-01 08:47:20.533 +01:00 [INF] 200
+2024-03-01 08:47:20.541 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/ui/resources/healthchecks-bundle.js - 200 null text/javascript 100.6385ms
+2024-03-01 08:47:20.604 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/healthchecks-api/ui-settings - null null
+2024-03-01 08:47:20.608 +01:00 [INF] GET /healthchecks-api/ui-settings
+2024-03-01 08:47:20.610 +01:00 [INF] Executing endpoint '/healthchecks-api/ui-settings'
+2024-03-01 08:47:20.618 +01:00 [INF] Executed endpoint '/healthchecks-api/ui-settings'
+2024-03-01 08:47:20.619 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/favicon.ico - null null
+2024-03-01 08:47:20.621 +01:00 [INF] 200
+2024-03-01 08:47:20.626 +01:00 [INF] GET /favicon.ico
+2024-03-01 08:47:20.628 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/healthchecks-api/ui-settings - 200 null application/json; charset=utf-8 23.8272ms
+2024-03-01 08:47:20.631 +01:00 [INF] 404
+2024-03-01 08:47:20.638 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/favicon.ico - 404 0 null 18.679ms
+2024-03-01 08:47:20.646 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7218/favicon.ico, Response status code: 404
+2024-03-01 08:47:20.646 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/healthchecks-api - null null
+2024-03-01 08:47:20.654 +01:00 [INF] GET /healthchecks-api
+2024-03-01 08:47:20.656 +01:00 [INF] Executing endpoint 'HealthChecks UI Api'
+2024-03-01 08:47:20.670 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/favicon.ico - null null
+2024-03-01 08:47:20.670 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/ui/resources/1ae4e3706fe3f478fcc1.woff2 - null null
+2024-03-01 08:47:20.676 +01:00 [INF] GET /favicon.ico
+2024-03-01 08:47:20.680 +01:00 [INF] GET /ui/resources/1ae4e3706fe3f478fcc1.woff2
+2024-03-01 08:47:20.681 +01:00 [INF] 404
+2024-03-01 08:47:20.683 +01:00 [INF] 404
+2024-03-01 08:47:20.685 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/favicon.ico - 404 0 null 15.0075ms
+2024-03-01 08:47:20.687 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/ui/resources/1ae4e3706fe3f478fcc1.woff2 - 404 0 null 17.2022ms
+2024-03-01 08:47:20.692 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7218/favicon.ico, Response status code: 404
+2024-03-01 08:47:20.697 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7218/ui/resources/1ae4e3706fe3f478fcc1.woff2, Response status code: 404
+2024-03-01 08:47:20.719 +01:00 [INF] Executed endpoint 'HealthChecks UI Api'
+2024-03-01 08:47:20.720 +01:00 [INF] 200
+2024-03-01 08:47:20.721 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/healthchecks-api - 200 null application/json; charset=utf-8 75.9601ms
+2024-03-01 08:47:26.571 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 08:47:26.575 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 08:47:26.579 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 08:47:26.582 +01:00 [INF] GET /hc
+2024-03-01 08:47:26.586 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 08:47:26.589 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0253ms with message 'null'
+2024-03-01 08:47:26.590 +01:00 [ERR] Health check SakilaDb-check with status "Unhealthy" completed after 2.4181ms with message 'null'
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "sakilaXXX" requested by the login. The login failed.
+Login failed for user 'DESKTOP-RCJ2PV1\marci'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at HealthChecks.SqlServer.SqlServerHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in /_/src/HealthChecks.SqlServer/SqlServerHealthCheck.cs:line 28
+ClientConnectionId:fc79b851-1990-43d3-870f-b05f5ddef8ff
+Error Number:4060,State:1,Class:11
+2024-03-01 08:47:26.606 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 08:47:26.606 +01:00 [INF] Received HTTP response headers after 29.281ms - 503
+2024-03-01 08:47:26.607 +01:00 [INF] 503
+2024-03-01 08:47:26.610 +01:00 [INF] End processing HTTP request after 38.2529ms - 503
+2024-03-01 08:47:26.611 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 503 null application/json 31.9939ms
+2024-03-01 08:47:26.612 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 08:47:26.619 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 08:47:30.731 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/healthchecks-api - null null
+2024-03-01 08:47:30.736 +01:00 [INF] GET /healthchecks-api
+2024-03-01 08:47:30.739 +01:00 [INF] Executing endpoint 'HealthChecks UI Api'
+2024-03-01 08:47:30.742 +01:00 [INF] Executed endpoint 'HealthChecks UI Api'
+2024-03-01 08:47:30.745 +01:00 [INF] 200
+2024-03-01 08:47:30.746 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/healthchecks-api - 200 null application/json; charset=utf-8 15.8171ms
+2024-03-01 08:47:36.631 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 08:47:36.635 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 08:47:36.639 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 08:47:36.644 +01:00 [INF] GET /hc
+2024-03-01 08:47:36.646 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 08:47:36.649 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0099ms with message 'null'
+2024-03-01 08:47:36.650 +01:00 [ERR] Health check SakilaDb-check with status "Unhealthy" completed after 1.4977ms with message 'null'
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "sakilaXXX" requested by the login. The login failed.
+Login failed for user 'DESKTOP-RCJ2PV1\marci'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at HealthChecks.SqlServer.SqlServerHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in /_/src/HealthChecks.SqlServer/SqlServerHealthCheck.cs:line 28
+ClientConnectionId:fc79b851-1990-43d3-870f-b05f5ddef8ff
+Error Number:4060,State:1,Class:11
+2024-03-01 08:47:36.663 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 08:47:36.663 +01:00 [INF] Received HTTP response headers after 25.5036ms - 503
+2024-03-01 08:47:36.664 +01:00 [INF] 503
+2024-03-01 08:47:36.667 +01:00 [INF] End processing HTTP request after 35.5694ms - 503
+2024-03-01 08:47:36.668 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 503 null application/json 28.688ms
+2024-03-01 08:47:36.671 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 08:47:36.676 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 08:47:40.759 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/healthchecks-api - null null
+2024-03-01 08:47:40.764 +01:00 [INF] GET /healthchecks-api
+2024-03-01 08:47:40.765 +01:00 [INF] Executing endpoint 'HealthChecks UI Api'
+2024-03-01 08:47:40.768 +01:00 [INF] Executed endpoint 'HealthChecks UI Api'
+2024-03-01 08:47:40.771 +01:00 [INF] 200
+2024-03-01 08:47:40.772 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/healthchecks-api - 200 null application/json; charset=utf-8 14.5296ms
+2024-03-01 08:47:46.679 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 08:47:46.684 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 08:47:46.695 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 08:47:46.697 +01:00 [INF] GET /hc
+2024-03-01 08:47:46.699 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 08:47:46.703 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0054ms with message 'null'
+2024-03-01 08:47:50.789 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/healthchecks-api - null null
+2024-03-01 08:47:50.796 +01:00 [INF] GET /healthchecks-api
+2024-03-01 08:47:50.797 +01:00 [INF] Executing endpoint 'HealthChecks UI Api'
+2024-03-01 08:47:50.800 +01:00 [INF] Executed endpoint 'HealthChecks UI Api'
+2024-03-01 08:47:50.803 +01:00 [INF] 200
+2024-03-01 08:47:50.804 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/healthchecks-api - 200 null application/json; charset=utf-8 15.86ms
+2024-03-01 08:47:56.741 +01:00 [ERR] Health check SakilaDb-check with status "Unhealthy" completed after 10038.3904ms with message 'null'
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "sakilaXXX" requested by the login. The login failed.
+Login failed for user 'DESKTOP-RCJ2PV1\marci'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at HealthChecks.SqlServer.SqlServerHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in /_/src/HealthChecks.SqlServer/SqlServerHealthCheck.cs:line 28
+ClientConnectionId:02d6d5e1-dd78-40f7-a879-6534ad3bbf53
+Error Number:4060,State:1,Class:11
+2024-03-01 08:47:56.756 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 08:47:56.756 +01:00 [INF] Received HTTP response headers after 10070.8779ms - 503
+2024-03-01 08:47:56.758 +01:00 [INF] 503
+2024-03-01 08:47:56.761 +01:00 [INF] End processing HTTP request after 10081.7167ms - 503
+2024-03-01 08:47:56.763 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 503 null application/json 10068.0199ms
+2024-03-01 08:47:56.765 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 08:47:56.771 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 08:48:40.363 +01:00 [INF] Initializing UI Database
+2024-03-01 08:48:41.306 +01:00 [INF] Saving healthchecks configuration to database
+2024-03-01 08:48:41.390 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 08:48:41.822 +01:00 [INF] Now listening on: https://localhost:7218
+2024-03-01 08:48:41.824 +01:00 [INF] Now listening on: http://localhost:5220
+2024-03-01 08:48:41.831 +01:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-03-01 08:48:42.557 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/ - null null
+2024-03-01 08:48:42.694 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 08:48:42.698 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 08:48:42.759 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-01 08:48:42.761 +01:00 [INF] Hosting environment: Development
+2024-03-01 08:48:42.762 +01:00 [INF] Content root path: C:\Users\marci\Projects\sages-abb-aspnetcore8\src\Sakila.Api
+2024-03-01 08:48:42.843 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 08:48:42.844 +01:00 [INF] GET /
+2024-03-01 08:48:42.847 +01:00 [INF] GET /hc
+2024-03-01 08:48:42.981 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 08:48:42.981 +01:00 [INF] Executing endpoint 'HTTP: GET /'
+2024-03-01 08:48:43.021 +01:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2024-03-01 08:48:43.023 +01:00 [INF] Executed endpoint 'HTTP: GET /'
+2024-03-01 08:48:43.026 +01:00 [INF] 302
+2024-03-01 08:48:43.030 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/ - 302 0 null 479.9688ms
+2024-03-01 08:48:43.037 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/swagger/index.html - null null
+2024-03-01 08:48:43.047 +01:00 [INF] GET /swagger/index.html
+2024-03-01 08:48:43.146 +01:00 [INF] 200
+2024-03-01 08:48:43.148 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/swagger/index.html - 200 null text/html;charset=utf-8 111.6145ms
+2024-03-01 08:48:43.155 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-01 08:48:43.159 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/_vs/browserLink - null null
+2024-03-01 08:48:43.176 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 21.7291ms
+2024-03-01 08:48:43.249 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/_vs/browserLink - 200 null text/javascript; charset=UTF-8 90.6849ms
+2024-03-01 08:48:43.336 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/swagger/v1/swagger.json - null null
+2024-03-01 08:48:43.340 +01:00 [INF] GET /swagger/v1/swagger.json
+2024-03-01 08:48:43.535 +01:00 [INF] 200
+2024-03-01 08:48:43.543 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 207.2154ms
+2024-03-01 08:48:43.856 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 08:48:43.860 +01:00 [INF] 200
+2024-03-01 08:48:43.861 +01:00 [INF] Received HTTP response headers after 1154.4269ms - 200
+2024-03-01 08:48:43.864 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 200 null application/json 1021.6774ms
+2024-03-01 08:48:43.867 +01:00 [INF] End processing HTTP request after 1179.326ms - 200
+2024-03-01 08:48:44.008 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 08:48:51.837 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/dashboard - null null
+2024-03-01 08:48:51.848 +01:00 [INF] GET /dashboard
+2024-03-01 08:48:51.852 +01:00 [INF] Executing endpoint 'HTTP: GET /dashboard'
+2024-03-01 08:48:51.855 +01:00 [INF] Executed endpoint 'HTTP: GET /dashboard'
+2024-03-01 08:48:51.858 +01:00 [INF] 200
+2024-03-01 08:48:51.861 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/dashboard - 200 null text/html 25.1774ms
+2024-03-01 08:48:51.873 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/ui/resources/healthchecksui-min.css - null null
+2024-03-01 08:48:51.875 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/ui/resources/healthchecks-bundle.js - null null
+2024-03-01 08:48:51.875 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/ui/resources/vendors-dll.js - null null
+2024-03-01 08:48:51.875 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-01 08:48:51.876 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/_vs/browserLink - null null
+2024-03-01 08:48:51.879 +01:00 [INF] GET /ui/resources/healthchecksui-min.css
+2024-03-01 08:48:51.887 +01:00 [INF] GET /ui/resources/healthchecks-bundle.js
+2024-03-01 08:48:51.890 +01:00 [INF] GET /ui/resources/vendors-dll.js
+2024-03-01 08:48:51.917 +01:00 [INF] Executing endpoint 'HTTP: GET /ui/resources/healthchecksui-min.css'
+2024-03-01 08:48:51.920 +01:00 [INF] Executing endpoint 'HTTP: GET /ui/resources/healthchecks-bundle.js'
+2024-03-01 08:48:51.921 +01:00 [INF] Executing endpoint 'HTTP: GET /ui/resources/vendors-dll.js'
+2024-03-01 08:48:51.927 +01:00 [INF] Executed endpoint 'HTTP: GET /ui/resources/healthchecksui-min.css'
+2024-03-01 08:48:51.895 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 19.732ms
+2024-03-01 08:48:51.933 +01:00 [INF] 200
+2024-03-01 08:48:51.945 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/ui/resources/healthchecksui-min.css - 200 null text/css 71.5019ms
+2024-03-01 08:48:51.945 +01:00 [INF] Executed endpoint 'HTTP: GET /ui/resources/healthchecks-bundle.js'
+2024-03-01 08:48:51.951 +01:00 [INF] Executed endpoint 'HTTP: GET /ui/resources/vendors-dll.js'
+2024-03-01 08:48:51.954 +01:00 [INF] 200
+2024-03-01 08:48:51.957 +01:00 [INF] 200
+2024-03-01 08:48:51.958 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/_vs/browserLink - 200 null text/javascript; charset=UTF-8 82.1348ms
+2024-03-01 08:48:51.960 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/ui/resources/healthchecks-bundle.js - 200 null text/javascript 84.9808ms
+2024-03-01 08:48:51.962 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/ui/resources/vendors-dll.js - 200 null text/javascript 86.6604ms
+2024-03-01 08:48:52.021 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/healthchecks-api/ui-settings - null null
+2024-03-01 08:48:52.025 +01:00 [INF] GET /healthchecks-api/ui-settings
+2024-03-01 08:48:52.027 +01:00 [INF] Executing endpoint '/healthchecks-api/ui-settings'
+2024-03-01 08:48:52.034 +01:00 [INF] Executed endpoint '/healthchecks-api/ui-settings'
+2024-03-01 08:48:52.037 +01:00 [INF] 200
+2024-03-01 08:48:52.039 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/healthchecks-api/ui-settings - 200 null application/json; charset=utf-8 18.9874ms
+2024-03-01 08:48:52.056 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/healthchecks-api - null null
+2024-03-01 08:48:52.063 +01:00 [INF] GET /healthchecks-api
+2024-03-01 08:48:52.066 +01:00 [INF] Executing endpoint 'HealthChecks UI Api'
+2024-03-01 08:48:52.076 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/ui/resources/1ae4e3706fe3f478fcc1.woff2 - null null
+2024-03-01 08:48:52.080 +01:00 [INF] GET /ui/resources/1ae4e3706fe3f478fcc1.woff2
+2024-03-01 08:48:52.085 +01:00 [INF] 404
+2024-03-01 08:48:52.087 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/ui/resources/1ae4e3706fe3f478fcc1.woff2 - 404 0 null 11.4449ms
+2024-03-01 08:48:52.091 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7218/ui/resources/1ae4e3706fe3f478fcc1.woff2, Response status code: 404
+2024-03-01 08:48:52.158 +01:00 [INF] Executed endpoint 'HealthChecks UI Api'
+2024-03-01 08:48:52.161 +01:00 [INF] 200
+2024-03-01 08:48:52.162 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/healthchecks-api - 200 null application/json; charset=utf-8 105.7637ms
+2024-03-01 08:48:54.019 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 08:48:54.023 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 08:48:54.027 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 08:48:54.031 +01:00 [INF] GET /hc
+2024-03-01 08:48:54.034 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 08:48:54.046 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 08:48:54.046 +01:00 [INF] Received HTTP response headers after 21.4714ms - 200
+2024-03-01 08:48:54.047 +01:00 [INF] 200
+2024-03-01 08:48:54.049 +01:00 [INF] End processing HTTP request after 30.1413ms - 200
+2024-03-01 08:48:54.051 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 200 null application/json 24.6389ms
+2024-03-01 08:48:54.065 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 08:49:02.174 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/healthchecks-api - null null
+2024-03-01 08:49:02.180 +01:00 [INF] GET /healthchecks-api
+2024-03-01 08:49:02.182 +01:00 [INF] Executing endpoint 'HealthChecks UI Api'
+2024-03-01 08:49:02.187 +01:00 [INF] Executed endpoint 'HealthChecks UI Api'
+2024-03-01 08:49:02.191 +01:00 [INF] 200
+2024-03-01 08:49:02.192 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/healthchecks-api - 200 null application/json; charset=utf-8 18.7574ms
+2024-03-01 08:49:04.076 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 08:49:04.081 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 08:49:04.084 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 08:49:04.086 +01:00 [INF] GET /hc
+2024-03-01 08:49:04.087 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 08:49:04.096 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.1866ms with message 'null'
+2024-03-01 08:49:04.100 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 08:49:04.101 +01:00 [INF] Received HTTP response headers after 19.1145ms - 503
+2024-03-01 08:49:04.103 +01:00 [INF] 503
+2024-03-01 08:49:04.105 +01:00 [INF] End processing HTTP request after 28.962ms - 503
+2024-03-01 08:49:04.106 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 503 null application/json 23.2639ms
+2024-03-01 08:49:04.164 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 08:49:04.185 +01:00 [INF] Saved 5 entities to in-memory store.
+2024-03-01 08:49:12.203 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/healthchecks-api - null null
+2024-03-01 08:49:12.209 +01:00 [INF] GET /healthchecks-api
+2024-03-01 08:49:12.210 +01:00 [INF] Executing endpoint 'HealthChecks UI Api'
+2024-03-01 08:49:12.215 +01:00 [INF] Executed endpoint 'HealthChecks UI Api'
+2024-03-01 08:49:12.221 +01:00 [INF] 200
+2024-03-01 08:49:12.222 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/healthchecks-api - 200 null application/json; charset=utf-8 20.7179ms
+2024-03-01 08:49:14.193 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 08:49:14.197 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 08:49:14.200 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 08:49:14.204 +01:00 [INF] GET /hc
+2024-03-01 08:49:14.207 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 08:49:14.210 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0067ms with message 'null'
+2024-03-01 08:49:14.214 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 08:49:14.214 +01:00 [INF] Received HTTP response headers after 15.4297ms - 503
+2024-03-01 08:49:14.215 +01:00 [INF] 503
+2024-03-01 08:49:14.216 +01:00 [INF] End processing HTTP request after 23.5247ms - 503
+2024-03-01 08:49:14.218 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 503 null application/json 19.367ms
+2024-03-01 08:49:14.222 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 08:49:14.229 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 08:49:22.241 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/healthchecks-api - null null
+2024-03-01 08:49:22.247 +01:00 [INF] GET /healthchecks-api
+2024-03-01 08:49:22.248 +01:00 [INF] Executing endpoint 'HealthChecks UI Api'
+2024-03-01 08:49:22.251 +01:00 [INF] Executed endpoint 'HealthChecks UI Api'
+2024-03-01 08:49:22.254 +01:00 [INF] 200
+2024-03-01 08:49:22.256 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/healthchecks-api - 200 null application/json; charset=utf-8 15.8132ms
+2024-03-01 08:49:24.236 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 08:49:24.240 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 08:49:24.244 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 08:49:24.249 +01:00 [INF] GET /hc
+2024-03-01 08:49:24.251 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 08:49:24.253 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.007ms with message 'null'
+2024-03-01 08:49:24.257 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 08:49:24.257 +01:00 [INF] Received HTTP response headers after 14.7892ms - 503
+2024-03-01 08:49:24.258 +01:00 [INF] 503
+2024-03-01 08:49:24.262 +01:00 [INF] End processing HTTP request after 25.4554ms - 503
+2024-03-01 08:49:24.263 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 503 null application/json 19.8015ms
+2024-03-01 08:49:24.265 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 08:49:24.272 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 08:49:32.270 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/healthchecks-api - null null
+2024-03-01 08:49:32.276 +01:00 [INF] GET /healthchecks-api
+2024-03-01 08:49:32.279 +01:00 [INF] Executing endpoint 'HealthChecks UI Api'
+2024-03-01 08:49:32.282 +01:00 [INF] Executed endpoint 'HealthChecks UI Api'
+2024-03-01 08:49:32.285 +01:00 [INF] 200
+2024-03-01 08:49:32.286 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/healthchecks-api - 200 null application/json; charset=utf-8 16.3965ms
+2024-03-01 08:49:34.279 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 08:49:34.281 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 08:49:34.286 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 08:49:34.291 +01:00 [INF] GET /hc
+2024-03-01 08:49:34.293 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 08:49:34.296 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0086ms with message 'null'
+2024-03-01 08:49:34.300 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 08:49:34.300 +01:00 [INF] Received HTTP response headers after 15.6835ms - 503
+2024-03-01 08:49:34.302 +01:00 [INF] 503
+2024-03-01 08:49:34.304 +01:00 [INF] End processing HTTP request after 25.3791ms - 503
+2024-03-01 08:49:34.305 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 503 null application/json 19.0585ms
+2024-03-01 08:49:34.308 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 08:49:34.315 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 08:49:42.298 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/healthchecks-api - null null
+2024-03-01 08:49:42.304 +01:00 [INF] GET /healthchecks-api
+2024-03-01 08:49:42.306 +01:00 [INF] Executing endpoint 'HealthChecks UI Api'
+2024-03-01 08:49:42.309 +01:00 [INF] Executed endpoint 'HealthChecks UI Api'
+2024-03-01 08:49:42.312 +01:00 [INF] 200
+2024-03-01 08:49:42.313 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/healthchecks-api - 200 null application/json; charset=utf-8 15.7758ms
+2024-03-01 08:49:44.322 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 08:49:44.326 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 08:49:44.329 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 08:49:44.332 +01:00 [INF] GET /hc
+2024-03-01 08:49:44.334 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 08:49:44.336 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0262ms with message 'null'
+2024-03-01 08:49:44.342 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 08:49:44.342 +01:00 [INF] Received HTTP response headers after 14.7148ms - 503
+2024-03-01 08:49:44.344 +01:00 [INF] 503
+2024-03-01 08:49:44.346 +01:00 [INF] End processing HTTP request after 24.1364ms - 503
+2024-03-01 08:49:44.348 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 503 null application/json 19.871ms
+2024-03-01 08:49:44.351 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 08:49:44.360 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 08:49:52.325 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/healthchecks-api - null null
+2024-03-01 08:49:52.334 +01:00 [INF] GET /healthchecks-api
+2024-03-01 08:49:52.336 +01:00 [INF] Executing endpoint 'HealthChecks UI Api'
+2024-03-01 08:49:52.338 +01:00 [INF] Executed endpoint 'HealthChecks UI Api'
+2024-03-01 08:49:52.340 +01:00 [INF] 200
+2024-03-01 08:49:52.342 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/healthchecks-api - 200 null application/json; charset=utf-8 18.2143ms
+2024-03-01 08:49:54.364 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 08:49:54.368 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 08:49:54.372 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 08:49:54.377 +01:00 [INF] GET /hc
+2024-03-01 08:49:54.378 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 08:49:54.380 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0259ms with message 'null'
+2024-03-01 08:49:54.384 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 08:49:54.384 +01:00 [INF] Received HTTP response headers after 13.9531ms - 503
+2024-03-01 08:49:54.386 +01:00 [INF] 503
+2024-03-01 08:49:54.388 +01:00 [INF] End processing HTTP request after 24.3597ms - 503
+2024-03-01 08:49:54.390 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 503 null application/json 17.8668ms
+2024-03-01 08:49:54.392 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 08:49:54.399 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 08:50:02.349 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/healthchecks-api - null null
+2024-03-01 08:50:02.354 +01:00 [INF] GET /healthchecks-api
+2024-03-01 08:50:02.356 +01:00 [INF] Executing endpoint 'HealthChecks UI Api'
+2024-03-01 08:50:02.358 +01:00 [INF] Executed endpoint 'HealthChecks UI Api'
+2024-03-01 08:50:02.362 +01:00 [INF] 200
+2024-03-01 08:50:02.364 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/healthchecks-api - 200 null application/json; charset=utf-8 15.4805ms
+2024-03-01 08:50:04.405 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 08:50:04.409 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 08:50:04.412 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 08:50:04.416 +01:00 [INF] GET /hc
+2024-03-01 08:50:04.417 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 08:50:04.421 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 08:50:04.422 +01:00 [INF] Received HTTP response headers after 11.0402ms - 200
+2024-03-01 08:50:04.423 +01:00 [INF] 200
+2024-03-01 08:50:04.425 +01:00 [INF] End processing HTTP request after 19.8543ms - 200
+2024-03-01 08:50:04.426 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 200 null application/json 15.0144ms
+2024-03-01 08:50:04.431 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 08:50:04.437 +01:00 [INF] Saved 5 entities to in-memory store.
+2024-03-01 08:50:12.378 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/healthchecks-api - null null
+2024-03-01 08:50:12.384 +01:00 [INF] GET /healthchecks-api
+2024-03-01 08:50:12.386 +01:00 [INF] Executing endpoint 'HealthChecks UI Api'
+2024-03-01 08:50:12.389 +01:00 [INF] Executed endpoint 'HealthChecks UI Api'
+2024-03-01 08:50:12.392 +01:00 [INF] 200
+2024-03-01 08:50:12.395 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/healthchecks-api - 200 null application/json; charset=utf-8 17.0689ms
+2024-03-01 08:50:14.447 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 08:50:14.453 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 08:50:14.456 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 08:50:14.460 +01:00 [INF] GET /hc
+2024-03-01 08:50:14.462 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 08:50:14.466 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 08:50:14.466 +01:00 [INF] Received HTTP response headers after 11.7146ms - 200
+2024-03-01 08:50:14.469 +01:00 [INF] 200
+2024-03-01 08:50:14.472 +01:00 [INF] End processing HTTP request after 24.8243ms - 200
+2024-03-01 08:50:14.474 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 200 null application/json 18.5594ms
+2024-03-01 08:50:14.477 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 08:50:22.410 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/healthchecks-api - null null
+2024-03-01 08:50:22.416 +01:00 [INF] GET /healthchecks-api
+2024-03-01 08:50:22.418 +01:00 [INF] Executing endpoint 'HealthChecks UI Api'
+2024-03-01 08:50:22.421 +01:00 [INF] Executed endpoint 'HealthChecks UI Api'
+2024-03-01 08:50:22.424 +01:00 [INF] 200
+2024-03-01 08:50:22.425 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/healthchecks-api - 200 null application/json; charset=utf-8 16.4988ms
+2024-03-01 08:50:24.490 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 08:50:24.493 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 08:50:24.498 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 08:50:24.502 +01:00 [INF] GET /hc
+2024-03-01 08:50:24.504 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 08:50:24.508 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 08:50:24.508 +01:00 [INF] Received HTTP response headers after 13.26ms - 200
+2024-03-01 08:50:24.511 +01:00 [INF] 200
+2024-03-01 08:50:24.513 +01:00 [INF] End processing HTTP request after 22.9456ms - 200
+2024-03-01 08:50:24.514 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 200 null application/json 17.4335ms
+2024-03-01 08:50:24.517 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 08:50:32.436 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/healthchecks-api - null null
+2024-03-01 08:50:32.442 +01:00 [INF] GET /healthchecks-api
+2024-03-01 08:50:32.445 +01:00 [INF] Executing endpoint 'HealthChecks UI Api'
+2024-03-01 08:50:32.449 +01:00 [INF] Executed endpoint 'HealthChecks UI Api'
+2024-03-01 08:50:32.453 +01:00 [INF] 200
+2024-03-01 08:50:32.455 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/healthchecks-api - 200 null application/json; charset=utf-8 18.7187ms
+2024-03-01 08:50:34.533 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 08:50:34.537 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 08:50:34.541 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 08:50:34.545 +01:00 [INF] GET /hc
+2024-03-01 08:50:34.546 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 08:50:34.549 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 08:50:34.550 +01:00 [INF] Received HTTP response headers after 9.9479ms - 200
+2024-03-01 08:50:34.551 +01:00 [INF] 200
+2024-03-01 08:50:34.553 +01:00 [INF] End processing HTTP request after 20.3941ms - 200
+2024-03-01 08:50:34.555 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 200 null application/json 14.1995ms
+2024-03-01 08:50:34.557 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 08:50:42.473 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/healthchecks-api - null null
+2024-03-01 08:50:42.479 +01:00 [INF] GET /healthchecks-api
+2024-03-01 08:50:42.481 +01:00 [INF] Executing endpoint 'HealthChecks UI Api'
+2024-03-01 08:50:42.484 +01:00 [INF] Executed endpoint 'HealthChecks UI Api'
+2024-03-01 08:50:42.486 +01:00 [INF] 200
+2024-03-01 08:50:42.487 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/healthchecks-api - 200 null application/json; charset=utf-8 15.0629ms
+2024-03-01 08:50:44.575 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 08:50:44.578 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 08:50:44.589 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 08:50:44.592 +01:00 [INF] GET /hc
+2024-03-01 08:50:44.593 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 08:50:44.598 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 08:50:44.598 +01:00 [INF] Received HTTP response headers after 18.0347ms - 200
+2024-03-01 08:50:44.599 +01:00 [INF] 200
+2024-03-01 08:50:44.601 +01:00 [INF] End processing HTTP request after 26.1982ms - 200
+2024-03-01 08:50:44.602 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 200 null application/json 12.7159ms
+2024-03-01 08:50:44.604 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 08:50:52.501 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/healthchecks-api - null null
+2024-03-01 08:50:52.511 +01:00 [INF] GET /healthchecks-api
+2024-03-01 08:50:52.512 +01:00 [INF] Executing endpoint 'HealthChecks UI Api'
+2024-03-01 08:50:52.515 +01:00 [INF] Executed endpoint 'HealthChecks UI Api'
+2024-03-01 08:50:52.517 +01:00 [INF] 200
+2024-03-01 08:50:52.518 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/healthchecks-api - 200 null application/json; charset=utf-8 18.7528ms
+2024-03-01 08:50:54.619 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 08:50:54.624 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 08:50:54.628 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 08:50:54.631 +01:00 [INF] GET /hc
+2024-03-01 08:50:54.633 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 08:50:54.637 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 08:50:54.638 +01:00 [INF] Received HTTP response headers after 11.839ms - 200
+2024-03-01 08:50:54.639 +01:00 [INF] 200
+2024-03-01 08:50:54.641 +01:00 [INF] End processing HTTP request after 22.2957ms - 200
+2024-03-01 08:50:54.642 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 200 null application/json 15.3959ms
+2024-03-01 08:50:54.645 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 08:51:02.525 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/healthchecks-api - null null
+2024-03-01 08:51:02.532 +01:00 [INF] GET /healthchecks-api
+2024-03-01 08:51:02.533 +01:00 [INF] Executing endpoint 'HealthChecks UI Api'
+2024-03-01 08:51:02.535 +01:00 [INF] Executed endpoint 'HealthChecks UI Api'
+2024-03-01 08:51:02.538 +01:00 [INF] 200
+2024-03-01 08:51:02.540 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/healthchecks-api - 200 null application/json; charset=utf-8 14.794ms
+2024-03-01 08:51:04.660 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 08:51:04.662 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 08:51:04.666 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 08:51:04.670 +01:00 [INF] GET /hc
+2024-03-01 08:51:04.672 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 08:51:04.675 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0069ms with message 'null'
+2024-03-01 08:51:04.679 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 08:51:04.679 +01:00 [INF] Received HTTP response headers after 15.201ms - 503
+2024-03-01 08:51:04.681 +01:00 [INF] 503
+2024-03-01 08:51:04.684 +01:00 [INF] End processing HTTP request after 24.0723ms - 503
+2024-03-01 08:51:04.686 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 503 null application/json 20.5068ms
+2024-03-01 08:51:04.688 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 08:51:04.695 +01:00 [INF] Saved 5 entities to in-memory store.
+2024-03-01 08:51:12.553 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/healthchecks-api - null null
+2024-03-01 08:51:12.559 +01:00 [INF] GET /healthchecks-api
+2024-03-01 08:51:12.561 +01:00 [INF] Executing endpoint 'HealthChecks UI Api'
+2024-03-01 08:51:12.563 +01:00 [INF] Executed endpoint 'HealthChecks UI Api'
+2024-03-01 08:51:12.566 +01:00 [INF] 200
+2024-03-01 08:51:12.568 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/healthchecks-api - 200 null application/json; charset=utf-8 15.7409ms
+2024-03-01 08:51:14.702 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 08:51:14.705 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 08:51:14.708 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 08:51:14.713 +01:00 [INF] GET /hc
+2024-03-01 08:51:14.715 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 08:51:14.716 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.0285ms with message 'null'
+2024-03-01 08:51:14.722 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 08:51:14.722 +01:00 [INF] Received HTTP response headers after 15.1465ms - 503
+2024-03-01 08:51:14.724 +01:00 [INF] 503
+2024-03-01 08:51:14.726 +01:00 [INF] End processing HTTP request after 23.4393ms - 503
+2024-03-01 08:51:14.728 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 503 null application/json 19.7313ms
+2024-03-01 08:51:14.731 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 08:51:14.739 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 08:51:22.587 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/healthchecks-api - null null
+2024-03-01 08:51:22.593 +01:00 [INF] GET /healthchecks-api
+2024-03-01 08:51:22.596 +01:00 [INF] Executing endpoint 'HealthChecks UI Api'
+2024-03-01 08:51:22.601 +01:00 [INF] Executed endpoint 'HealthChecks UI Api'
+2024-03-01 08:51:22.605 +01:00 [INF] 200
+2024-03-01 08:51:22.608 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/healthchecks-api - 200 null application/json; charset=utf-8 21.4667ms
+2024-03-01 08:51:24.739 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 08:51:24.744 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 08:51:24.747 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 08:51:24.750 +01:00 [INF] GET /hc
+2024-03-01 08:51:24.751 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 08:51:24.753 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 0.1997ms with message 'null'
+2024-03-01 08:51:24.758 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 08:51:24.758 +01:00 [INF] Received HTTP response headers after 12.3466ms - 503
+2024-03-01 08:51:24.760 +01:00 [INF] 503
+2024-03-01 08:51:24.762 +01:00 [INF] End processing HTTP request after 23.2453ms - 503
+2024-03-01 08:51:24.765 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 503 null application/json 17.4045ms
+2024-03-01 08:51:24.766 +01:00 [INF] Notification is sent on same window time.
+2024-03-01 08:51:24.774 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 09:53:54.516 +01:00 [INF] Initializing UI Database
+2024-03-01 09:53:55.376 +01:00 [INF] Saving healthchecks configuration to database
+2024-03-01 09:53:55.477 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 09:53:55.718 +01:00 [INF] Now listening on: https://localhost:7218
+2024-03-01 09:53:55.724 +01:00 [INF] Now listening on: http://localhost:5220
+2024-03-01 09:53:55.732 +01:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-03-01 09:53:56.127 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/ - null null
+2024-03-01 09:53:56.159 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 09:53:56.162 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 09:53:56.223 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-01 09:53:56.226 +01:00 [INF] Hosting environment: Development
+2024-03-01 09:53:56.236 +01:00 [INF] Content root path: C:\Users\marci\Projects\sages-abb-aspnetcore8\src\Sakila.Api
+2024-03-01 09:53:56.275 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 09:53:56.277 +01:00 [INF] GET /
+2024-03-01 09:53:56.279 +01:00 [INF] GET /hc
+2024-03-01 09:53:56.355 +01:00 [INF] Executing endpoint 'HTTP: GET /'
+2024-03-01 09:53:56.355 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 09:53:56.368 +01:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2024-03-01 09:53:56.370 +01:00 [INF] Executed endpoint 'HTTP: GET /'
+2024-03-01 09:53:56.372 +01:00 [INF] 302
+2024-03-01 09:53:56.377 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/ - 302 0 null 257.071ms
+2024-03-01 09:53:56.378 +01:00 [ERR] Health check Random with status "Unhealthy" completed after 1.2918ms with message 'null'
+2024-03-01 09:53:56.383 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/swagger/index.html - null null
+2024-03-01 09:53:56.403 +01:00 [INF] GET /swagger/index.html
+2024-03-01 09:53:56.527 +01:00 [INF] 200
+2024-03-01 09:53:56.530 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/swagger/index.html - 200 null text/html;charset=utf-8 147.0188ms
+2024-03-01 09:53:56.538 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-01 09:53:56.539 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/_vs/browserLink - null null
+2024-03-01 09:53:56.552 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 14.2752ms
+2024-03-01 09:53:56.627 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/_vs/browserLink - 200 null text/javascript; charset=UTF-8 88.999ms
+2024-03-01 09:53:56.711 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7218/swagger/v1/swagger.json - null null
+2024-03-01 09:53:56.716 +01:00 [INF] GET /swagger/v1/swagger.json
+2024-03-01 09:53:56.856 +01:00 [INF] 200
+2024-03-01 09:53:56.858 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7218/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 146.9908ms
+2024-03-01 09:53:56.896 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 09:53:56.899 +01:00 [INF] 503
+2024-03-01 09:53:56.899 +01:00 [INF] Received HTTP response headers after 732.1564ms - 503
+2024-03-01 09:53:56.900 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 503 null application/json 625.2246ms
+2024-03-01 09:53:56.904 +01:00 [INF] End processing HTTP request after 754.8958ms - 503
+2024-03-01 09:53:57.016 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 09:53:57.160 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 09:54:07.199 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 09:54:07.204 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 09:54:07.208 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 09:54:07.214 +01:00 [INF] GET /hc
+2024-03-01 09:54:07.217 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 09:54:07.230 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 09:54:07.231 +01:00 [INF] Received HTTP response headers after 24.6056ms - 200
+2024-03-01 09:54:07.235 +01:00 [INF] 200
+2024-03-01 09:54:07.237 +01:00 [INF] End processing HTTP request after 37.4007ms - 200
+2024-03-01 09:54:07.238 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 200 null application/json 29.767ms
+2024-03-01 09:54:07.258 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-03-01 09:54:07.289 +01:00 [INF] Saved 5 entities to in-memory store.
+2024-03-01 09:54:17.307 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 09:54:17.313 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 09:54:17.319 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 09:54:17.322 +01:00 [INF] GET /hc
+2024-03-01 09:54:17.324 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 09:54:17.329 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 09:54:17.329 +01:00 [INF] Received HTTP response headers after 13.0498ms - 200
+2024-03-01 09:54:17.330 +01:00 [INF] 200
+2024-03-01 09:54:17.333 +01:00 [INF] End processing HTTP request after 25.9017ms - 200
+2024-03-01 09:54:17.335 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 200 null application/json 16.2358ms
+2024-03-01 09:54:17.339 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 09:54:26.060 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/api/customers/map?lat=51&lng=21 - null null
+2024-03-01 09:54:26.068 +01:00 [INF] GET /api/customers/map
+2024-03-01 09:54:26.071 +01:00 [INF] Executing endpoint 'HTTP: GET api/customers/map'
+2024-03-01 09:54:49.596 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 09:54:49.596 +01:00 [INF] Get request http://maps.google.com 14 51,21
+2024-03-01 09:54:49.600 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 09:54:49.607 +01:00 [INF] Executed endpoint 'HTTP: GET api/customers/map'
+2024-03-01 09:54:49.610 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 09:54:49.612 +01:00 [INF] 200
+2024-03-01 09:54:49.617 +01:00 [INF] GET /hc
+2024-03-01 09:54:49.619 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/api/customers/map?lat=51&lng=21 - 200 0 null 23559.2083ms
+2024-03-01 09:54:49.621 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 09:54:49.630 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 09:54:49.631 +01:00 [INF] Received HTTP response headers after 22.6363ms - 200
+2024-03-01 09:54:49.632 +01:00 [INF] 200
+2024-03-01 09:54:49.633 +01:00 [INF] End processing HTTP request after 37.6045ms - 200
+2024-03-01 09:54:49.635 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 200 null application/json 24.8245ms
+2024-03-01 09:54:49.638 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-03-01 09:54:59.638 +01:00 [INF] Start processing HTTP request GET https://localhost:7218/hc
+2024-03-01 09:54:59.642 +01:00 [INF] Sending HTTP request GET https://localhost:7218/hc
+2024-03-01 09:54:59.646 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7218/hc - null null
+2024-03-01 09:54:59.649 +01:00 [INF] GET /hc
+2024-03-01 09:54:59.651 +01:00 [INF] Executing endpoint 'Health checks'
+2024-03-01 09:54:59.656 +01:00 [INF] Executed endpoint 'Health checks'
+2024-03-01 09:54:59.656 +01:00 [INF] Received HTTP response headers after 12.0803ms - 200
+2024-03-01 09:54:59.658 +01:00 [INF] 200
+2024-03-01 09:54:59.660 +01:00 [INF] End processing HTTP request after 22.5923ms - 200
+2024-03-01 09:54:59.661 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7218/hc - 200 null application/json 15.1237ms
+2024-03-01 09:54:59.664 +01:00 [INF] Saved 4 entities to in-memory store.
